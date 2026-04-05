@@ -11,6 +11,16 @@ import {
   Users,
   CheckCircle2,
   Zap,
+  Clock,
+  MessageSquare,
+  DollarSign,
+  Scale,
+  Landmark,
+  AlertTriangle,
+  BadgeCheck,
+  CalendarClock,
+  ShieldOff,
+  Building2,
   type LucideIcon,
 } from "lucide-react";
 
@@ -306,7 +316,100 @@ export const auditTickerData = {
   nextInduction: "April 15th",
 };
 
-/* ─── 20-Point Integrity Standard (The Shield) ─── */
+/* ─── BYLDRS Guardian™ 10-Point Integrity Standard (The Shield — Consumer-Facing) ─── */
+export interface GuardianPoint {
+  number: number;
+  title: string;
+  subtitle: string;
+  icon: LucideIcon;
+  theCheck: string;
+  theProtection: string;
+}
+
+export const guardianTenPoints: GuardianPoint[] = [
+  {
+    number: 1,
+    title: "Real-Time 30-Day Vetting",
+    subtitle: "License & Insurance",
+    icon: Clock,
+    theCheck: "Monthly verification of CA CSLB Licenses, $1M+ General Liability, and Active Workers' Comp.",
+    theProtection: "Most platforms check once a year. We check every 30 days to ensure you are never liable for onsite accidents or unlicensed work.",
+  },
+  {
+    number: 2,
+    title: "No-Ghosting Communication Guarantee",
+    subtitle: "Real-Time Production Portal",
+    icon: MessageSquare,
+    theCheck: "Integration with the NXLBYLDR™ Real-Time Production Portal.",
+    theProtection: "Eliminates the 'Deposit Ghosting' phase. You receive automated updates, photo progress, and direct access to your team from start to finish.",
+  },
+  {
+    number: 3,
+    title: "Legal Payment Protection",
+    subtitle: "CSLB Compliance",
+    icon: DollarSign,
+    theCheck: "Strict enforcement of CA State down-payment limits (10% or $1,000 max).",
+    theProtection: "You keep the financial leverage. We ensure our partners never demand illegal upfront deposits, keeping your investment safe.",
+  },
+  {
+    number: 4,
+    title: "Fixed-Price Integrity",
+    subtitle: "No Bait-and-Switch",
+    icon: Scale,
+    theCheck: "Mandatory 'Root Cause' identification before final bidding.",
+    theProtection: "Prevents mid-job price spikes. The price quoted is the price you pay, backed by digital change orders for any requested additions.",
+  },
+  {
+    number: 5,
+    title: "Clean Legal & Financial Standing",
+    subtitle: "Annual Audit",
+    icon: Landmark,
+    theCheck: "Annual audit for outstanding lawsuits, liens, material legal judgments, or financial insolvency.",
+    theProtection: "We only partner with stable, verified home improvement businesses with a physical local office and a clean record.",
+  },
+  {
+    number: 6,
+    title: "24-Hour Transparency Protocol",
+    subtitle: "Mandatory Mishap Reporting",
+    icon: AlertTriangle,
+    theCheck: "Mandatory mishap reporting and resolution SOPs.",
+    theProtection: "If a minor accident happens (a cracked tile or sprinkler), our pros are required to notify you and provide a written resolution within 24 hours.",
+  },
+  {
+    number: 7,
+    title: "Certified Craftsmanship & Warranty Guard",
+    subtitle: "Factory-Trained Verification",
+    icon: BadgeCheck,
+    theCheck: "Verification of 5+ years experience and factory-trained certifications.",
+    theProtection: "Ensures your 20-30 year manufacturer warranties remain valid. Uncertified labor voids warranties—Guardian labor protects them.",
+  },
+  {
+    number: 8,
+    title: "Honoring Your 'Cooling-Off' Rights",
+    subtitle: "CA Civil Code 1689.6",
+    icon: CalendarClock,
+    theCheck: "Adherence to CA Civil Code 1689.6 (3-to-5 day cancellation rights).",
+    theProtection: "We never allow high-pressure 'instant starts.' We respect your legal right to reflect on your decision before the hammer swings.",
+  },
+  {
+    number: 9,
+    title: "Zero-Footprint Property Protection",
+    subtitle: "Site Restoration Protocols",
+    icon: ShieldOff,
+    theCheck: "Standardized 'Site Restoration' protocols and landscape shielding.",
+    theProtection: "Your kids, pets, and driveways stay safe. Our pros follow a strict clean-up routine to leave your home exactly how they found it.",
+  },
+  {
+    number: 10,
+    title: "Local Permit & Code Compliance",
+    subtitle: "LA/OC Building Code Adherence",
+    icon: Building2,
+    theCheck: "Verification of LA/OC city-specific building code adherence.",
+    theProtection: "No 'stop-work' orders or city fines. We handle the red tape to ensure your project adds real, legal value to your home equity.",
+  },
+];
+
+/* ─── 20-Point Operational Deep Audit (The Shield — Professional) ─── */
 export const integrityStandard = {
   title: "The BYLDRS Guardian™ 20-Point Integrity Standard",
   subheadline:
