@@ -10,6 +10,8 @@ import {
   Eye,
   Lock,
   Wrench,
+  XCircle,
+  Users,
 } from 'lucide-react';
 import { guardianTenPoints, integrityStandard } from '@/lib/data';
 
@@ -18,7 +20,9 @@ export default function ServicesOverviewPage() {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* ── Hero Section ── */}
+      {/* ═══════════════════════════════════════════════════════════════
+          HERO SECTION — The Guardian 10-Point Integrity Standard
+          ═══════════════════════════════════════════════════════════════ */}
       <section className="relative pt-28 pb-16 md:pt-36 md:pb-24 overflow-hidden hero-gradient">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <AnimatedSection className="text-center max-w-3xl mx-auto">
@@ -41,28 +45,43 @@ export default function ServicesOverviewPage() {
             <p className="text-base sm:text-lg text-[#6E6E73] max-w-2xl mx-auto leading-relaxed">
               Every Guardian-certified contractor passes our 10-point consumer trust verification — checked every 30 days. No exceptions. No shortcuts. Because your home deserves more than a coin flip.
             </p>
-            {/* Quick Stats */}
-            <div className="mt-10 flex flex-wrap items-center justify-center gap-6 sm:gap-10">
+
+            {/* ── Quick Stats ── */}
+            <div className="mt-10 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 max-w-4xl mx-auto">
               <div className="text-center">
                 <p className="text-3xl sm:text-4xl font-bold text-[#1A237E]">30</p>
                 <p className="text-xs sm:text-sm text-[#6E6E73] font-medium mt-1">Day Re-Verification</p>
               </div>
-              <div className="w-px h-10 bg-[rgba(0,0,0,0.1)]" />
               <div className="text-center">
                 <p className="text-3xl sm:text-4xl font-bold text-[#1A237E]">10</p>
-                <p className="text-xs sm:text-sm text-[#6E6E73] font-medium mt-1">Consumer Protection Points</p>
+                <p className="text-xs sm:text-sm text-[#6E6E73] font-medium mt-1">Protection Points</p>
               </div>
-              <div className="w-px h-10 bg-[rgba(0,0,0,0.1)]" />
               <div className="text-center">
                 <p className="text-3xl sm:text-4xl font-bold text-[#1A237E]">0</p>
                 <p className="text-xs sm:text-sm text-[#6E6E73] font-medium mt-1">Unverified Contractors</p>
               </div>
+              <div className="text-center col-span-2 md:col-span-1">
+                <p className="text-3xl sm:text-4xl font-bold text-[#C62828]">34%</p>
+                <p className="text-xs sm:text-sm text-[#6E6E73] font-medium mt-1">Applicants Fail Audit</p>
+              </div>
             </div>
+
+            {/* Failure Rate Callout */}
+            <AnimatedSection delay={0.15}>
+              <div className="mt-8 inline-flex items-start gap-3 bg-[#C62828]/[0.04] border border-[#C62828]/[0.12] rounded-2xl px-5 sm:px-7 py-4 max-w-2xl mx-auto text-left">
+                <XCircle className="w-5 h-5 text-[#C62828] flex-shrink-0 mt-0.5" />
+                <p className="text-sm text-[#6E6E73] leading-relaxed">
+                  <span className="font-semibold text-[#1D1D1F]">Audit Rigor:</span> 34% of applicants fail our initial 20-Point Deep-Dive. We only keep the elite pros, so you don&apos;t have to guess.
+                </p>
+              </div>
+            </AnimatedSection>
           </AnimatedSection>
         </div>
       </section>
 
-      {/* ── The Guardian 10-Point Standard (HERO OF THE PAGE) ── */}
+      {/* ═══════════════════════════════════════════════════════════════
+          THE GUARDIAN 10 — The Hero of the Page
+          ═══════════════════════════════════════════════════════════════ */}
       <section className="py-20 md:py-28 bg-white">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection className="text-center mb-14 md:mb-18">
@@ -113,6 +132,7 @@ export default function ServicesOverviewPage() {
                           )}
 
                           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mt-3">
+                            {/* The Check */}
                             <div className="bg-[#F5F5F7] rounded-xl p-3 sm:p-4">
                               <div className="flex items-center gap-2 mb-1.5">
                                 <Eye className="w-3.5 h-3.5 text-[#1A237E] flex-shrink-0" />
@@ -122,12 +142,13 @@ export default function ServicesOverviewPage() {
                                 {point.theCheck}
                               </p>
                             </div>
-                            <div className="bg-[#1A237E]/[0.03] rounded-xl p-3 sm:p-4 border border-[#1A237E]/[0.06]">
+                            {/* The Protection — BOLDED & visually prominent */}
+                            <div className="rounded-xl p-3 sm:p-4 bg-[#1A237E] border border-[#1A237E] shadow-[0_2px_12px_rgba(26,35,126,0.12)]">
                               <div className="flex items-center gap-2 mb-1.5">
-                                <Lock className="w-3.5 h-3.5 text-[#1A237E] flex-shrink-0" />
-                                <span className="text-xs font-semibold text-[#1A237E] uppercase tracking-wider">The Protection</span>
+                                <Lock className="w-3.5 h-3.5 text-[#D4AF37] flex-shrink-0" />
+                                <span className="text-xs font-bold text-[#D4AF37] uppercase tracking-wider">The Protection</span>
                               </div>
-                              <p className="text-xs sm:text-sm text-[#6E6E73] leading-relaxed">
+                              <p className="text-xs sm:text-sm text-white font-semibold leading-relaxed">
                                 {point.theProtection}
                               </p>
                             </div>
@@ -147,31 +168,109 @@ export default function ServicesOverviewPage() {
               <p className="text-[#6E6E73] text-sm mb-5 max-w-md mx-auto leading-relaxed">
                 Every Guardian-certified contractor is re-verified every 30 days. If they fall below standard, the Seal is revoked — and you are reassigned to a verified pro.
               </p>
-              <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
-                <Button
-                  onClick={() => navigate('apply')}
-                  size="lg"
-                  className="bg-[#1A237E] hover:bg-[#0D1754] text-white font-semibold px-8 h-12 text-base rounded-full shadow-[0_2px_16px_rgba(26,35,126,0.2)] hover:shadow-[0_4px_24px_rgba(26,35,126,0.3)] transition-all duration-300 cursor-pointer"
-                >
-                  Request a Guardian-Vetted Partner
-                  <ArrowRight className="size-4 ml-2" />
-                </Button>
-                <Button
-                  onClick={() => navigate('apply')}
-                  size="lg"
-                  variant="outline"
-                  className="border-[#1A237E]/20 text-[#1A237E] hover:bg-[#1A237E]/[0.04] font-semibold px-8 h-12 text-base rounded-full transition-all duration-300 cursor-pointer"
-                >
-                  Apply for the 10-Point Audit
-                  <Wrench className="size-4 ml-2" />
-                </Button>
-              </div>
+              <Button
+                onClick={() => navigate('apply')}
+                size="lg"
+                className="bg-[#1A237E] hover:bg-[#0D1754] text-white font-semibold px-8 h-12 text-base rounded-full shadow-[0_2px_16px_rgba(26,35,126,0.2)] hover:shadow-[0_4px_24px_rgba(26,35,126,0.3)] transition-all duration-300 cursor-pointer"
+              >
+                Request a Guardian-Vetted Partner
+                <ArrowRight className="size-4 ml-2" />
+              </Button>
             </div>
           </AnimatedSection>
         </div>
       </section>
 
-      {/* ── Why It Matters ── */}
+      {/* ═══════════════════════════════════════════════════════════════
+          GUARDIAN VS. THE OTHER GUYS — Trust Comparison
+          ═══════════════════════════════════════════════════════════════ */}
+      <section className="py-16 md:py-24 bg-[#F5F5F7]">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <AnimatedSection className="text-center mb-10 md:mb-14">
+            <span className="inline-block text-xs font-semibold tracking-[0.2em] uppercase text-[#1A237E] mb-3">
+              The Trust Gap
+            </span>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#1D1D1F] tracking-tight">
+              The Guardian vs. The Other Guys
+            </h2>
+          </AnimatedSection>
+
+          <StaggerContainer
+            staggerDelay={0.15}
+            className="grid grid-cols-1 md:grid-cols-2 gap-6"
+          >
+            {/* Lead Farms Card */}
+            <StaggerItem>
+              <div className="bg-white rounded-2xl border border-[rgba(0,0,0,0.08)] p-6 sm:p-8 h-full relative overflow-hidden">
+                <div className="absolute top-0 left-0 right-0 h-1 bg-[#C62828]" />
+                <div className="flex items-center gap-3 mb-5">
+                  <div className="w-10 h-10 rounded-xl bg-[#C62828]/[0.08] flex items-center justify-center">
+                    <XCircle className="w-5 h-5 text-[#C62828]" />
+                  </div>
+                  <div>
+                    <p className="text-xs font-semibold text-[#C62828] uppercase tracking-wider">The Status Quo</p>
+                    <h3 className="text-lg font-bold text-[#1D1D1F]">The Big Lead Farms</h3>
+                  </div>
+                </div>
+                <p className="text-sm text-[#6E6E73] mb-5 font-medium">
+                  Angi, Yelp, HomeAdvisor, Thumbtack — the platforms that sell your information to anyone willing to pay.
+                </p>
+                <ul className="space-y-3">
+                  {[
+                    'Vetted once a year (at best)',
+                    'Your info sold to 5+ contractors',
+                    'Zero accountability once work starts',
+                    'No production tracking or transparency',
+                    'No financial protection for homeowners',
+                  ].map((item) => (
+                    <li key={item} className="flex items-start gap-2.5">
+                      <XCircle className="w-4 h-4 text-[#C62828] flex-shrink-0 mt-0.5" />
+                      <span className="text-sm text-[#6E6E73]">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </StaggerItem>
+
+            {/* Guardian Card */}
+            <StaggerItem>
+              <div className="bg-white rounded-2xl border border-[#1A237E]/[0.15] p-6 sm:p-8 h-full relative overflow-hidden shadow-[0_2px_16px_rgba(26,35,126,0.08)]">
+                <div className="absolute top-0 left-0 right-0 h-1 bg-[#1A237E]" />
+                <div className="flex items-center gap-3 mb-5">
+                  <div className="w-10 h-10 rounded-xl bg-[#1A237E]/[0.08] flex items-center justify-center">
+                    <Shield className="w-5 h-5 text-[#1A237E]" />
+                  </div>
+                  <div>
+                    <p className="text-xs font-semibold text-[#1A237E] uppercase tracking-wider">The Standard</p>
+                    <h3 className="text-lg font-bold text-[#1D1D1F]">The BYLDRS Guardian</h3>
+                  </div>
+                </div>
+                <p className="text-sm text-[#6E6E73] mb-5 font-medium">
+                  The only contractor network that re-verifies every partner every 30 days — and answers to a Board of Ethics.
+                </p>
+                <ul className="space-y-3">
+                  {[
+                    'Real-time 30-day re-verification',
+                    'Exclusive partnerships (no shared leads)',
+                    '24-hour transparency guarantee',
+                    'Direct accountability to our Board of Ethics',
+                    'Full financial & legal protection built in',
+                  ].map((item) => (
+                    <li key={item} className="flex items-start gap-2.5">
+                      <CheckCircle2 className="w-4 h-4 text-[#1A237E] flex-shrink-0 mt-0.5" />
+                      <span className="text-sm text-[#1D1D1F] font-medium">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </StaggerItem>
+          </StaggerContainer>
+        </div>
+      </section>
+
+      {/* ═══════════════════════════════════════════════════════════════
+          WHY IT MATTERS — Revenue Multiplier Stats
+          ═══════════════════════════════════════════════════════════════ */}
       <section className="py-16 md:py-24 bg-[#0D1754]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <AnimatedSection>
@@ -202,7 +301,9 @@ export default function ServicesOverviewPage() {
         </div>
       </section>
 
-      {/* ── Professional Deep Audit: 20-Point Operational Standard ── */}
+      {/* ═══════════════════════════════════════════════════════════════
+          BEHIND THE SEAL — 20-Point Operational Deep-Dive
+          ═══════════════════════════════════════════════════════════════ */}
       <section className="py-20 md:py-28 relative overflow-hidden">
         {/* Marine Blue base with subtle gold gradient overlay */}
         <div className="absolute inset-0 bg-gradient-to-br from-[#0A1628] via-[#0D1754] to-[#1A237E]" />
@@ -221,13 +322,10 @@ export default function ServicesOverviewPage() {
               For the Professionals
             </span>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white tracking-tight leading-tight mb-4">
-              The Professional&apos;s Deep Audit
+              Behind the Seal: Our 20-Point Operational Deep-Dive
             </h2>
-            <p className="text-[#9FA8DA] font-medium text-base sm:text-lg max-w-2xl mx-auto leading-relaxed mb-2">
-              For the Pros who move the needle, we go beyond the consumer-facing 10 points.
-            </p>
-            <p className="text-[#C5CAE9]/70 text-sm max-w-xl mx-auto leading-relaxed">
-              We verify an additional 10 operational checkpoints including CEO Strategy Syncs and 8-Channel Content Management — the full machinery behind every Guardian-certified contractor.
+            <p className="text-[#9FA8DA] font-medium text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
+              While you see 10 layers of consumer protection, we audit 20. We verify the business health, CEO leadership, and digital infrastructure of every partner to ensure they have the staying power to back their warranties for years to come.
             </p>
             {/* Decorative gold divider */}
             <div className="mt-8 mx-auto w-24 h-px bg-gradient-to-r from-transparent via-[#D4AF37]/60 to-transparent" />
@@ -272,7 +370,7 @@ export default function ServicesOverviewPage() {
                 size="lg"
                 className="bg-[#D4AF37] hover:bg-[#B8860B] text-[#0A1628] font-bold px-8 h-12 text-base rounded-full shadow-[0_2px_16px_rgba(212,175,55,0.25)] hover:shadow-[0_4px_24px_rgba(212,175,55,0.35)] transition-all duration-300 cursor-pointer"
               >
-                Apply for the 10-Point Audit
+                Apply for the 20-Point Audit
                 <ArrowRight className="size-4 ml-2" />
               </Button>
             </div>
@@ -280,7 +378,9 @@ export default function ServicesOverviewPage() {
         </div>
       </section>
 
-      {/* ── Bottom CTA Section ── */}
+      {/* ═══════════════════════════════════════════════════════════════
+          BOTTOM CTA — Homeowner-Focused
+          ═══════════════════════════════════════════════════════════════ */}
       <section className="bg-white py-16 md:py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <AnimatedSection>
