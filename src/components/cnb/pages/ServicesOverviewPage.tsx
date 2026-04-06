@@ -12,6 +12,8 @@ import {
   Wrench,
   XCircle,
   Users,
+  Video,
+  Sparkles,
 } from 'lucide-react';
 import { guardianTenPoints, integrityStandard } from '@/lib/data';
 
@@ -358,6 +360,33 @@ export default function ServicesOverviewPage() {
               </StaggerItem>
             ))}
           </StaggerContainer>
+
+          {/* ── Value-Add Bonus: Authority Branding Video ── */}
+          {integrityStandard.valueAdd && (
+            <AnimatedSection delay={0.3} className="mt-10">
+              <div className="relative bg-gradient-to-r from-[#D4AF37]/20 via-[#D4AF37]/10 to-[#D4AF37]/20 border border-[#D4AF37]/30 rounded-2xl p-6 sm:p-8 max-w-2xl mx-auto">
+                <div className="absolute -top-3 left-6">
+                  <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#D4AF37] text-[#0A1628] text-[10px] font-bold tracking-widest uppercase">
+                    <Sparkles className="w-3 h-3" />
+                    Value-Add Bonus
+                  </span>
+                </div>
+                <div className="flex items-start gap-4 mt-2">
+                  <div className="w-12 h-12 rounded-xl bg-[#D4AF37]/20 border border-[#D4AF37]/30 flex items-center justify-center flex-shrink-0">
+                    <Video className="w-6 h-6 text-[#D4AF37]" />
+                  </div>
+                  <div>
+                    <h4 className="text-base sm:text-lg font-bold text-white mb-1.5">
+                      {integrityStandard.valueAdd.title}
+                    </h4>
+                    <p className="text-sm text-[#C5CAE9] leading-relaxed">
+                      {integrityStandard.valueAdd.description}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </AnimatedSection>
+          )}
 
           {/* Professional CTA */}
           <AnimatedSection delay={0.35} className="mt-14 md:mt-16 text-center">

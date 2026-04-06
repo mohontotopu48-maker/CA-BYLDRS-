@@ -49,3 +49,43 @@ Stage Summary:
 - Guardian vs. Other Guys comparison section directly addresses homeowner trust concerns
 - 20-Point section properly rebranded as "Behind the Seal" with updated copy
 - All CTAs updated: homeowners get "Request a Guardian-Vetted Partner", contractors get "Apply for the 20-Point Audit"
+---
+Task ID: 3
+Agent: Main Agent
+Task: Master Brand Strategy Update — Alliance Page & Pro-Shop Launch
+
+Work Log:
+- Read worklog and all existing project files (page.tsx, router-store, Navbar, Footer, AboutPage, ServicesOverviewPage, ProPortalPage, globals.css, data.ts)
+- Added 'proshop' page key to router-store.tsx PageKey union type and pageTitles map
+- Added 'Pro-Shop' to navLinks and footerLinks in data.ts
+- Imported ProShopPage and added 'proshop' case to PageRouter in page.tsx
+- Updated AboutPage.tsx (Alliance page) with new "Meet Your Contractor Before the First Call" section:
+  - Section label: "Personal Authority Branding"
+  - Headline: "We Don't Just Send Leads. We Create Authorities."
+  - Navy "Solution" card with Video icon explaining Guardian Authority Video concept
+  - Gray "How We Help" card with Award icon explaining Alpha Trial production
+  - Three stats: "3 Weeks to Authority" | "Professional Production" | "Profile + Social + Web"
+  - CTA button: "Start Your Authority Build"
+- Created new ProShopPage.tsx (422 lines) with 5 sections:
+  1. Hero: "Guardian Pro-Shop: Dress for the Elite Status You've Earned" with Guardian Verified badge
+  2. Product Grid: 6 merchandise cards with CSS-based visual mockups (polo, hat, tee, banner, clipboard, truck)
+  3. Why the Gear Matters: 3 stat cards (89%, 3x, 47%) with supporting copy
+  4. Smart Integration: GHL data capture note (Merch_Order / Authority_Video_Booking tags)
+  5. Bottom CTA: Dual buttons — "Apply for the Alpha Trial" + "Explore the Alliance"
+- Added Authority Branding Video as value-add bonus to integrityStandard in data.ts
+- Updated ServicesOverviewPage.tsx (Shield page) with:
+  - Video + Sparkles icon imports
+  - Value-Add Bonus card between 20-point grid and professional CTA (gold gradient, "Value-Add Bonus" label, Video icon)
+- Attempted image generation via z-ai-web-dev-sdk (CLI + API route) — auth not available in sandbox
+- Created CSS-based product visual mockups as premium alternatives (each product has unique gradient + shape)
+- Lint passes cleanly on all modified files
+- Dev server compiles and serves with 200 status
+
+Stage Summary:
+- Alliance page now includes Personal Authority Branding section with Guardian Authority Video positioning
+- New Pro-Shop page live with 6 merchandise items and premium CSS mockups
+- Pro-Shop integrated into navigation, footer, and router
+- Shield page updated with Authority Branding Video as value-add bonus (#21) in Integrity Scorecard
+- GHL data capture tags documented in Pro-Shop (Merch_Order / Authority_Video_Booking)
+- All 5 deliverables from user's MASTER BRAND STRATEGY UPDATE implemented
+

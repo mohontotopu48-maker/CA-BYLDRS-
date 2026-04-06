@@ -12,6 +12,7 @@ import {
   Video,
   ArrowRight,
   HardHat,
+  Award,
 } from 'lucide-react';
 
 const differentiators = [
@@ -146,6 +147,88 @@ export default function AboutPage() {
               </StaggerItem>
             ))}
           </StaggerContainer>
+        </div>
+      </section>
+
+      {/* Meet Your Contractor Before the First Call — Authority Branding */}
+      <section className="py-16 md:py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <AnimatedSection className="text-center max-w-3xl mx-auto mb-12">
+            <span className="inline-block text-xs font-semibold tracking-widest uppercase text-[#1A237E] mb-3">
+              Personal Authority Branding
+            </span>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#1D1D1F] leading-tight tracking-tight mb-4">
+              We Don't Just Send Leads. We Create Authorities.
+            </h2>
+            <p className="text-lg text-[#6E6E73] max-w-2xl mx-auto leading-relaxed">
+              The number one fear for homeowners is the &apos;Stranger Danger.&apos; Homeowners are terrified of who they are letting into their space — their most personal investment.
+            </p>
+          </AnimatedSection>
+
+          {/* Solution + How We Help cards */}
+          <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12 max-w-4xl mx-auto">
+            <StaggerItem>
+              <div className="bg-[#1A237E] rounded-2xl p-8 h-full">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center">
+                    <Video className="w-6 h-6 text-white" />
+                  </div>
+                  <span className="text-xs font-semibold tracking-widest uppercase text-white/70">
+                    The CA BYLDRS Solution
+                  </span>
+                </div>
+                <p className="text-base text-white/90 leading-relaxed">
+                  We produce a high-impact, Guardian Authority Video for your public profile. This short, high-quality video introduces the contractor, their story, their &apos;Why,&apos; and their core expertise before they even ring the doorbell. Homeowners choose the human they trust — not just the low-ball estimate.
+                </p>
+              </div>
+            </StaggerItem>
+            <StaggerItem>
+              <div className="bg-[#F5F5F7] rounded-2xl p-8 h-full">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-12 h-12 rounded-xl bg-[#E8EAF6] flex items-center justify-center">
+                    <Award className="w-6 h-6 text-[#1A237E]" />
+                  </div>
+                  <span className="text-xs font-semibold tracking-widest uppercase text-[#1A237E]">
+                    How We Help
+                  </span>
+                </div>
+                <p className="text-base text-[#6E6E73] leading-relaxed">
+                  As part of the Alpha Trial, our production team directs, films, and edits your Guardian Authority Video to maximize trust and authority. You aren&apos;t just another contractor — you&apos;re the Neighborhood Expert.
+                </p>
+              </div>
+            </StaggerItem>
+          </StaggerContainer>
+
+          {/* Stats row */}
+          <StaggerContainer className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-12 max-w-3xl mx-auto">
+            <StaggerItem>
+              <div className="bg-white rounded-2xl border border-black/[0.08] shadow-sm p-6 text-center">
+                <p className="text-lg font-bold text-[#1D1D1F]">3 Weeks to Authority</p>
+              </div>
+            </StaggerItem>
+            <StaggerItem>
+              <div className="bg-white rounded-2xl border border-black/[0.08] shadow-sm p-6 text-center">
+                <p className="text-lg font-bold text-[#1D1D1F]">Professional Production</p>
+              </div>
+            </StaggerItem>
+            <StaggerItem>
+              <div className="bg-white rounded-2xl border border-black/[0.08] shadow-sm p-6 text-center">
+                <p className="text-lg font-bold text-[#1D1D1F]">Profile + Social + Web</p>
+              </div>
+            </StaggerItem>
+          </StaggerContainer>
+
+          {/* CTA */}
+          <AnimatedSection className="text-center">
+            <Button
+              onClick={() => navigate('apply')}
+              size="lg"
+              className="bg-[#1A237E] hover:bg-[#0D1754] text-white font-semibold px-8 h-12 text-base rounded-full shadow-sm cursor-pointer"
+            >
+              Start Your Authority Build
+              <ArrowRight className="size-4 ml-2" />
+            </Button>
+          </AnimatedSection>
         </div>
       </section>
 

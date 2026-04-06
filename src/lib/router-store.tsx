@@ -8,6 +8,7 @@ export type PageKey =
   | 'engine'
   | 'shield'
   | 'alliance'
+  | 'proshop'
   | 'proportal'
   | 'apply'
   | 'privacy'
@@ -32,6 +33,7 @@ const pageTitles: Record<string, string> = {
   engine: 'The Engine — NXLBYLDR™ OS',
   shield: 'The Shield — BYLDRS Guardian',
   alliance: 'The Alliance — CA BYLDRS Network',
+  proshop: 'Pro-Shop — Guardian Gear',
   proportal: 'Pro-Portal — Guardian Path',
   apply: 'Start Your $500 Performance Audit',
   privacy: 'Privacy Policy',

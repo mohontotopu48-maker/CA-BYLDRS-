@@ -29,6 +29,7 @@ export const navLinks = [
   { label: "The Engine", href: "engine" },
   { label: "The Shield", href: "shield" },
   { label: "The Alliance", href: "alliance" },
+  { label: "Pro-Shop", href: "proshop" },
   { label: "Pro-Portal", href: "proportal" },
   { label: "Apply Now", href: "apply" },
 ];
@@ -39,6 +40,7 @@ export const footerLinks = {
     { label: "The Engine", href: "engine" },
     { label: "The Shield", href: "shield" },
     { label: "The Alliance", href: "alliance" },
+    { label: "Pro-Shop", href: "proshop" },
     { label: "Pro-Portal", href: "proportal" },
     { label: "Apply Now", href: "apply" },
   ],
@@ -436,6 +438,10 @@ export const integrityStandard = {
     { title: "Mandatory CEO Strategy Sync", description: "Monthly 60-minute ROI review with our CSO." },
     { title: "Guardian Maintenance Plans", description: "Authorization to offer recurrent neighborhood service plans." },
   ],
+  valueAdd: {
+    title: "Authority Branding Video",
+    description: "High-impact Guardian Authority Video introducing the contractor, their story, and their 'Why' — produced by our team as part of the Alpha Trial to maximize trust before the first call.",
+  },
 };
 
 /* ─── Trust Stats ─── */

@@ -22,6 +22,7 @@ import TheEnginePage from '@/components/cnb/pages/ServicePage';
 import TheShieldPage from '@/components/cnb/pages/ServicesOverviewPage';
 import TheAlliancePage from '@/components/cnb/pages/AboutPage';
 import ApplyPage from '@/components/cnb/pages/PartnerPage';
+import ProShopPage from '@/components/cnb/pages/ProShopPage';
 import ProPortalPage from '@/components/cnb/pages/ProPortalPage';
 import PrivacyPage from '@/components/cnb/pages/PrivacyPage';
 import TermsPage from '@/components/cnb/pages/TermsPage';
@@ -57,6 +58,8 @@ function PageRouter() {
       return <TheShieldPage />;
     case 'alliance':
       return <TheAlliancePage />;
+    case 'proshop':
+      return <ProShopPage />;
     case 'proportal':
       return <ProPortalPage />;
     case 'apply':
