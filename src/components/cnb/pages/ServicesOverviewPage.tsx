@@ -28,9 +28,27 @@ export default function ServicesOverviewPage() {
       <section className="relative pt-28 pb-16 md:pt-36 md:pb-24 overflow-hidden hero-gradient">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <AnimatedSection className="text-center max-w-3xl mx-auto">
-            {/* Shield Badge */}
-            <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-[#1A237E] mb-6 shadow-[0_4px_24px_rgba(26,35,126,0.25)]">
-              <Shield className="w-10 h-10 text-white" />
+            {/* Guardian Integrity Seal — Mark of Excellence */}
+            <div className="inline-flex flex-col items-center mb-6">
+              <div className="relative">
+                {/* Outer gold ring */}
+                <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-full border-2 border-[#D4AF37]/50 bg-gradient-to-br from-[#1A237E] to-[#0D1754] flex items-center justify-center shadow-[0_4px_24px_rgba(26,35,126,0.25)]">
+                  {/* Inner gold ring */}
+                  <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full border border-[#D4AF37]/30 bg-[#1A237E] flex items-center justify-center">
+                    <img
+                      src="https://i.ibb.co/6308JrK/image.png"
+                      alt="Guardian Integrity Seal"
+                      width={64}
+                      height={64}
+                      className="h-12 sm:h-14 w-auto object-contain brightness-0 invert"
+                    />
+                  </div>
+                </div>
+                {/* "Verified" badge */}
+                <div className="absolute -bottom-1.5 left-1/2 -translate-x-1/2 px-2.5 py-0.5 rounded-full bg-[#D4AF37] text-[8px] font-bold text-[#0A1628] tracking-wider uppercase whitespace-nowrap">
+                  Mark of Excellence
+                </div>
+              </div>
             </div>
             <span className="inline-block text-xs font-semibold tracking-[0.2em] uppercase text-[#1A237E] mb-4">
               The Shield
@@ -44,9 +62,17 @@ export default function ServicesOverviewPage() {
             <p className="text-xl sm:text-2xl font-medium text-[#1A237E] mb-6">
               We Audit the Professional so You Don&apos;t Have to Gamble on the Project.
             </p>
-            <p className="text-base sm:text-lg text-[#6E6E73] max-w-2xl mx-auto leading-relaxed">
+            <p className="text-base sm:text-lg text-[#6E6E73] max-w-2xl mx-auto leading-relaxed mb-6">
               Every Guardian-certified contractor passes our 10-point consumer trust verification — checked every 30 days. No exceptions. No shortcuts. Because your home deserves more than a coin flip.
             </p>
+
+            {/* Guardian Seal Promise */}
+            <div className="inline-flex items-start gap-3 bg-[#D4AF37]/[0.06] border border-[#D4AF37]/[0.15] rounded-2xl px-5 sm:px-7 py-4 max-w-2xl text-left">
+              <Shield className="w-5 h-5 text-[#D4AF37] flex-shrink-0 mt-0.5" />
+              <p className="text-sm text-[#6E6E73] leading-relaxed">
+                <span className="font-semibold text-[#1D1D1F]">The Guardian Seal is earned, not bought.</span> Our 20-point rigorous audit ensures that every partner is Licensed, Insured, and Ethically Aligned with Southern California building standards.
+              </p>
+            </div>
 
             {/* ── Quick Stats ── */}
             <div className="mt-10 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 max-w-4xl mx-auto">

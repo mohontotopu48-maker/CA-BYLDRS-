@@ -1,6 +1,6 @@
 'use client';
 
-import { Shield, Award, ChevronRight } from 'lucide-react';
+import { Shield, Award, ChevronRight, FileCheck, Sparkles, Lock } from 'lucide-react';
 import { useRouter } from '@/lib/router-store';
 import { AnimatedSection, StaggerContainer, StaggerItem } from '@/components/cnb/AnimatedSection';
 import { Button } from '@/components/ui/button';
@@ -48,9 +48,41 @@ export default function HeroSection() {
             </p>
           </AnimatedSection>
 
+          {/* Elite Market Exclusivity Callout */}
+          <AnimatedSection delay={0.3}>
+            <div className="mt-6 max-w-2xl mx-auto">
+              <div className="inline-flex items-start gap-3 bg-[#1A237E]/[0.04] border border-[#1A237E]/[0.1] rounded-2xl px-5 sm:px-7 py-4 text-left">
+                <Shield className="w-5 h-5 text-[#1A237E] flex-shrink-0 mt-0.5" />
+                <p className="text-sm sm:text-base text-[#6E6E73] leading-relaxed">
+                  <span className="font-semibold text-[#1D1D1F]">In the Southern California market,</span> homeowners aren&apos;t just looking for a contractor — they are looking for a <span className="font-semibold text-[#1A237E]">Guardian</span>. If you aren&apos;t on the vetted list, you are invisible to the elite homeowner.
+                </p>
+              </div>
+            </div>
+          </AnimatedSection>
+
+          {/* No-Contract Promise Badge */}
+          <AnimatedSection delay={0.35}>
+            <div className="mt-6 flex items-center justify-center gap-4 flex-wrap">
+              <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#1A237E]">
+                <Lock className="w-3.5 h-3.5" />
+                No Long-Term Contracts
+              </span>
+              <span className="w-1 h-1 rounded-full bg-[#C5CAE9]" />
+              <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#1A237E]">
+                <FileCheck className="w-3.5 h-3.5" />
+                No Hidden Fees
+              </span>
+              <span className="w-1 h-1 rounded-full bg-[#C5CAE9]" />
+              <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#1A237E]">
+                <Sparkles className="w-3.5 h-3.5" />
+                Performance-Driven Growth
+              </span>
+            </div>
+          </AnimatedSection>
+
           {/* CTA Buttons */}
-          <AnimatedSection delay={0.4}>
-            <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
+          <AnimatedSection delay={0.45}>
+            <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
               <Button
                 size="lg"
                 className="bg-[#1A237E] hover:bg-[#0D1754] text-white font-semibold px-8 py-4 text-base sm:text-lg rounded-full shadow-[0_2px_16px_rgba(26,35,126,0.2)] hover:shadow-[0_4px_24px_rgba(26,35,126,0.3)] transition-all duration-300 cursor-pointer h-auto"

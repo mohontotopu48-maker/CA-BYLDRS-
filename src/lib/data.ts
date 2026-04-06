@@ -73,6 +73,7 @@ export const powerTriad: TriadItem[] = [
       "Automated lead capture & instant routing",
       "60-second speed-to-lead response system",
       "AI-powered follow-up sequences",
+      "GEO & AI Optimization (AIO) — Siri, Alexa, ChatGPT-ready",
       "Pipeline tracking & ROI dashboard",
       "Review generation automation",
       "CRM + Marketing automation in one",

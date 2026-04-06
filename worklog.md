@@ -88,4 +88,40 @@ Stage Summary:
 - Shield page updated with Authority Branding Video as value-add bonus (#21) in Integrity Scorecard
 - GHL data capture tags documented in Pro-Shop (Merch_Order / Authority_Video_Booking)
 - All 5 deliverables from user's MASTER BRAND STRATEGY UPDATE implemented
+---
+Task ID: 4
+Agent: Main Agent
+Task: Strategic Upgrade — Guardian Authority & Social Connectivity
+
+Work Log:
+- Updated HeroSection.tsx:
+  - Added "Elite Market Exclusivity" callout card: "In the Southern California market, homeowners aren't just looking for a contractor — they are looking for a Guardian."
+  - Added "No-Contract Promise" badge row: No Long-Term Contracts · No Hidden Fees · Performance-Driven Growth (with Lock, FileCheck, Sparkles icons)
+  - Added imports: FileCheck, Sparkles, Lock
+- Updated Shield page (ServicesOverviewPage.tsx) hero:
+  - Replaced simple Shield icon badge with Guardian Integrity Seal — concentric gold rings with inverted CA BYLDRS logo, "Mark of Excellence" gold badge
+  - Added Guardian Seal Promise callout: "The Guardian Seal is earned, not bought. Our 20-point rigorous audit ensures that every partner is Licensed, Insured, and Ethically Aligned..."
+- Updated data.ts NXLBYLDR™ OS features:
+  - Added "GEO & AI Optimization (AIO) — Siri, Alexa, ChatGPT-ready" as 4th feature in The Engine triad
+- Completely rewrote Footer.tsx:
+  - Added 5 social icons (YouTube, Facebook, Instagram, X, LinkedIn) with minimalist circular design
+  - Created custom XIcon and LinkedInIcon SVG components (not in lucide-react)
+  - Updated copyright: "© 2026 VSUALdigitalmedia. All rights reserved. | Powered by NXLBYLDR™"
+  - Added tagline: "Own the Neighborhood. Win the Market. Become a Guardian."
+- Completely rewrote HowItWorks.tsx (Elite Three-Step Roadmap):
+  - Step 01 AUDIT — deep-dive 20-point integrity check (ClipboardCheck icon, navy accent)
+  - Step 02 AUTHORITY — personal branding video + NXLBYLDR™ sales portal (Video icon, gold accent)
+  - Step 03 DOMINATE — Guardian Seal + 8-channel content engine (Rocket icon, navy accent)
+  - Updated header: "Your Elite Three-Step Roadmap"
+  - Added connecting dashed line between steps
+  - Added CTA button: "Start With Step 1 — Your $500 Audit"
+- Lint passes clean, dev server compiles with 200 status
+
+Stage Summary:
+- Hero now communicates market exclusivity and no-contract promise
+- Shield page features the Guardian Integrity Seal as a "Mark of Excellence" with the CA BYLDRS logo prominently displayed
+- AI & Voice Search Dominance added as AIO feature in the Engine triad
+- Footer updated with social connectivity icons, new copyright, and brand tagline
+- How It Works transformed from generic homeowner flow to contractor-focused Elite Three-Step Roadmap
+
 

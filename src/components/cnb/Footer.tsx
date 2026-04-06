@@ -1,8 +1,34 @@
 'use client';
 
-import { Phone, Mail, MapPin, ChevronRight, Cpu, Shield, BarChart3 } from 'lucide-react';
+import { Phone, Mail, MapPin, ChevronRight, Cpu, Shield, BarChart3, Youtube, Facebook, Instagram } from 'lucide-react';
 import { useRouter } from '@/lib/router-store';
 import { footerLinks } from '@/lib/data';
+
+/* Minimalist X (Twitter) icon — not in lucide-react */
+function XIcon({ className }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+      <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+    </svg>
+  );
+}
+
+/* Minimalist LinkedIn icon */
+function LinkedInIcon({ className }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+      <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+    </svg>
+  );
+}
+
+const socialLinks = [
+  { icon: Youtube, href: 'https://youtube.com', label: 'YouTube' },
+  { icon: Facebook, href: 'https://facebook.com', label: 'Facebook' },
+  { icon: Instagram, href: 'https://instagram.com', label: 'Instagram' },
+  { icon: XIcon, href: 'https://x.com', label: 'X' },
+  { icon: LinkedInIcon, href: 'https://linkedin.com', label: 'LinkedIn' },
+];
 
 export function Footer() {
   const { navigate } = useRouter();
@@ -24,9 +50,29 @@ export function Footer() {
               width={192} height={64}
               className="h-14 w-auto object-contain mb-5 drop-shadow-sm"
             />
-            <p className="text-sm text-[#6E6E73] mb-6 leading-relaxed">
+            <p className="text-sm text-[#6E6E73] mb-5 leading-relaxed">
               The Elite B2B Unified Referral Network for Licensed Contractors in OC &amp; LA County.
             </p>
+
+            {/* Social Icons */}
+            <div className="flex items-center gap-3 mb-6">
+              {socialLinks.map((social) => {
+                const Icon = social.icon;
+                return (
+                  <a
+                    key={social.label}
+                    href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={social.label}
+                    className="w-9 h-9 rounded-full bg-white border border-black/[0.06] flex items-center justify-center text-[#6E6E73] hover:text-[#1A237E] hover:border-[#1A237E]/20 hover:shadow-sm transition-all duration-200"
+                  >
+                    <Icon className="w-4 h-4" />
+                  </a>
+                );
+              })}
+            </div>
+
             <div className="space-y-3">
               <div className="flex items-center gap-2 text-sm text-[#6E6E73]">
                 <Phone className="h-4 w-4 text-[#1A237E] shrink-0" />
@@ -131,23 +177,33 @@ export function Footer() {
 
       {/* Bottom Bar */}
       <div className="border-t border-[rgba(0,0,0,0.08)]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-xs text-[#86868B]">
-            &copy; {new Date().getFullYear()} CA BYLDRS. All rights reserved.
-          </p>
-          <div className="flex items-center gap-6">
-            <button
-              onClick={() => handleNav('privacy')}
-              className="text-xs text-[#86868B] hover:text-[#1D1D1F] transition-colors duration-200"
-            >
-              Privacy Policy
-            </button>
-            <button
-              onClick={() => handleNav('terms')}
-              className="text-xs text-[#86868B] hover:text-[#1D1D1F] transition-colors duration-200"
-            >
-              Terms of Service
-            </button>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div className="text-center sm:text-left">
+              <p className="text-xs text-[#86868B]">
+                &copy; 2026 VSUALdigitalmedia. All rights reserved. | Powered by NXLBYLDR&trade;
+              </p>
+            </div>
+            <div className="flex items-center gap-6">
+              <button
+                onClick={() => handleNav('privacy')}
+                className="text-xs text-[#86868B] hover:text-[#1D1D1F] transition-colors duration-200"
+              >
+                Privacy Policy
+              </button>
+              <button
+                onClick={() => handleNav('terms')}
+                className="text-xs text-[#86868B] hover:text-[#1D1D1F] transition-colors duration-200"
+              >
+                Terms of Service
+              </button>
+            </div>
+          </div>
+          {/* Tagline */}
+          <div className="mt-4 text-center sm:text-right">
+            <p className="text-[10px] font-semibold tracking-[0.15em] uppercase text-[#1A237E]/40">
+              Own the Neighborhood. Win the Market. Become a Guardian.
+            </p>
           </div>
         </div>
       </div>
