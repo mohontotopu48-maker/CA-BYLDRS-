@@ -174,3 +174,31 @@ Stage Summary:
 - All type mismatches in CountyPage/CountyServicePage resolved
 - Dead dark mode CSS removed, ticker animation properly globalized
 - Build passes cleanly: 13 routes, 0 errors, 0 warnings
+
+---
+Task ID: 6
+Agent: Main Agent
+Task: Push code to GitHub and trigger Vercel redeploy
+
+Work Log:
+- Verified git status: clean working tree, 5 commits on main
+- Ran ESLint: 0 errors, 56 warnings (all non-critical)
+- Ran Next.js build: compiled successfully, 13 routes, 0 TypeScript errors
+- Pushed to origin (CA-BYLDRS-) successfully: 4f08913..4f08913 (already up to date), then with workflow: 4f08913..36dad18
+- Attempted push to vercel-repo (nxlbyldr-update-S-): FAILED with 403 (fine-grained PAT lacks Contents:Write for this repo)
+- Removed broken vercel-repo remote
+- Checked Vercel deployment at nxlbyldr-update-s.vercel.app → redirects to nxlbyldr.com
+- Verified live deployment is outdated (missing all recent features: Elite Market, No-Contract, 34% Fail, Pro-Shop, Strategic Configurator, Authority Branding)
+- Fine-grained GitHub PAT has push access to CA-BYLDRS- but NOT to nxlbyldr-update-S-
+- No Vercel CLI token available (tried: env vars, ~/.vercel/, project config, API with GitHub PAT)
+- Created .github/workflows/vercel-deploy.yml for CI/CD pipeline
+- Pushed workflow to CA-BYLDRS- repo
+
+Stage Summary:
+- Code successfully pushed to GitHub: https://github.com/mohontotopu48-maker/CA-BYLDRS-
+- Build verified: 0 errors, 13 routes, all clean
+- Vercel deployment at nxlbyldr.com is STALE — needs redeploy
+- Cannot push to nxlbyldr-update-S- repo (PAT permission issue)
+- No Vercel API token available in environment
+- GitHub Actions workflow created but requires VERCEL_TOKEN, VERCEL_ORG_ID, VERCEL_PROJECT_ID secrets
+- USER ACTION NEEDED: Either re-link Vercel project to CA-BYLDRS- repo, or provide Vercel API token
