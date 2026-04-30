@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Inter, Outfit } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
 
@@ -119,16 +120,16 @@ export default function RootLayout({
         }}
       />
       <head>
-        {/* GoHighLevel External Tracking Script */}
-        <script
-          src="https://link.msgsndr.com/js/external-tracking.js"
-          data-tracking-id="tk_10e022fb5c9f4ebea7a518b61fa81171"
-          async
-        />
         {/* Preload critical logo image */}
         <link rel="preload" as="image" href="https://i.ibb.co/6308JrK/image.png" type="image/png" />
         <link rel="icon" href="https://i.ibb.co/6308JrK/image.png" type="image/png" />
       </head>
+      {/* GoHighLevel External Tracking Script */}
+      <Script
+        src="https://link.msgsndr.com/js/external-tracking.js"
+        data-tracking-id="tk_10e022fb5c9f4ebea7a518b61fa81171"
+        strategy="afterInteractive"
+      />
       <body
         className={`${inter.variable} ${outfit.variable} antialiased bg-background text-foreground`}
       >
