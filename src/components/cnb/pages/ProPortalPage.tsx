@@ -70,19 +70,6 @@ export default function ProPortalPage() {
         </div>
       </div>
 
-      <style jsx>{`
-        @keyframes ticker-scroll {
-          0% { transform: translateX(0); }
-          100% { transform: translateX(-50%); }
-        }
-        .ticker-marquee {
-          animation: ticker-scroll 30s linear infinite;
-        }
-        .ticker-marquee:hover {
-          animation-play-state: paused;
-        }
-      `}</style>
-
       {/* ── Section 2: Hero ── */}
       <section className="relative overflow-hidden bg-gradient-to-b from-[#0D1754] to-[#1A237E] pt-20 pb-24 md:pt-28 md:pb-32">
         {/* Subtle decorative gradient orbs */}

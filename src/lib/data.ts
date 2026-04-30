@@ -453,32 +453,37 @@ export interface ServiceItem {
   name: string;
   icon: LucideIcon;
   description: string;
+  shortDescription?: string;
+  features?: string[];
+  faqs?: Array<{ q: string; a: string }>;
 }
 
 export const services: ServiceItem[] = [
-  { slug: 'roofing', name: 'Roofing', icon: Shield, description: 'Expert roof repair, replacement, and maintenance.' },
-  { slug: 'hvac', name: 'HVAC', icon: Zap, description: 'Heating, ventilation, and air conditioning services.' },
-  { slug: 'plumbing', name: 'Plumbing', icon: Wrench, description: 'Full-service plumbing repair and installation.' },
-  { slug: 'electrical', name: 'Electrical', icon: Zap, description: 'Licensed electrical work for homes and businesses.' },
-  { slug: 'painting', name: 'Painting', icon: Sparkles, description: 'Interior and exterior painting services.' },
-  { slug: 'landscaping', name: 'Landscaping', icon: Landmark, description: 'Professional landscaping design and maintenance.' },
+  { slug: 'roofing', name: 'Roofing', icon: Shield, description: 'Expert roof repair, replacement, and maintenance.', shortDescription: 'Expert roof repair, replacement, and storm damage restoration.' },
+  { slug: 'hvac', name: 'HVAC', icon: Zap, description: 'Heating, ventilation, and air conditioning services.', shortDescription: 'Complete heating and cooling installation and maintenance.' },
+  { slug: 'plumbing', name: 'Plumbing', icon: Wrench, description: 'Full-service plumbing repair and installation.', shortDescription: 'Full-service plumbing repair, installation, and emergency fixes.' },
+  { slug: 'electrical', name: 'Electrical', icon: Zap, description: 'Licensed electrical work for homes and businesses.', shortDescription: 'Licensed electrical work for residential and commercial properties.' },
+  { slug: 'painting', name: 'Painting', icon: Sparkles, description: 'Interior and exterior painting services.', shortDescription: 'Interior and exterior painting with premium finishes.' },
+  { slug: 'landscaping', name: 'Landscaping', icon: Landmark, description: 'Professional landscaping design and maintenance.', shortDescription: 'Professional landscaping design, installation, and maintenance.' },
 ];
 
 /* ─── Counties ─── */
 export interface CountyItem {
   slug: string;
   name: string;
+  tagline?: string;
   description: string;
   image: string;
+  cities?: string[];
 }
 
 export const counties: CountyItem[] = [
-  { slug: 'orange-county', name: 'Orange County', description: 'Full service coverage across Orange County', image: '/oc.jpg' },
-  { slug: 'los-angeles-county', name: 'Los Angeles County', description: 'Full service coverage across Los Angeles County', image: '/la.jpg' },
+  { slug: 'orange-county', name: 'Orange County', tagline: 'Premium Home Services Across OC', description: 'Full service coverage across Orange County with verified, licensed professionals.', image: '/oc.jpg', cities: ['Anaheim', 'Irvine', 'Santa Ana', 'Huntington Beach', 'Garden Grove', 'Fullerton', 'Costa Mesa', 'Orange', 'Mission Viejo', 'Newport Beach', 'Laguna Niguel', 'Yorba Linda', 'Tustin', 'Brea', 'Westminster'] },
+  { slug: 'los-angeles-county', name: 'Los Angeles County', tagline: 'Trusted Professionals Across LA', description: 'Full service coverage across Los Angeles County with elite, Guardian-certified contractors.', image: '/la.jpg', cities: ['Long Beach', 'Santa Monica', 'Pasadena', 'Burbank', 'Glendale', 'Torrance', 'Lakewood', 'Norwalk', 'Downey', 'Whittier', 'Pico Rivera', 'Cerritos', 'La Mirada', 'Santa Fe Springs', 'Culver City'] },
 ];
 
 /* ─── County Services ─── */
-export const countyServices = services.map((s) => ({ slug: s.slug }));
+export const countyServices = services.map((s) => ({ slug: s.slug, service: s.name }));
 
 /* ─── Trust Stats ─── */
 export const trustStats = [

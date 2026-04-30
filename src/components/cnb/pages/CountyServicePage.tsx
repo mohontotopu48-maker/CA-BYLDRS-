@@ -67,7 +67,7 @@ export default function CountyServicePage({ countySlug, serviceSlug }: CountySer
                   {service.name} in {county.name}
                 </h1>
                 <p className="text-lg text-[#6E6E73] max-w-2xl">
-                  {service.shortDescription} Serving homeowners throughout {county.name}, including {county.cities.slice(0, 4).join(', ')}{county.cities.length > 4 ? ', and more' : ''}.
+                  {service.shortDescription} Serving homeowners throughout {county.name}{county.cities ? `, including ${county.cities.slice(0, 4).join(', ')}${county.cities.length > 4 ? ', and more' : ''}` : ''}.
                 </p>
               </div>
             </div>
@@ -94,7 +94,7 @@ export default function CountyServicePage({ countySlug, serviceSlug }: CountySer
                       <MapPin className="h-5 w-5 text-[#1A237E] shrink-0 mt-0.5" />
                       <p className="text-sm text-[#1D1D1F]">
                         Our verified {service.name.toLowerCase()} professionals serve all areas of {county.name}, including{' '}
-                        {county.cities.join(', ')}.
+                        {county.cities?.join(', ') || county.name}.
                       </p>
                     </div>
                   </div>
@@ -109,7 +109,7 @@ export default function CountyServicePage({ countySlug, serviceSlug }: CountySer
                   <h2 className="text-2xl font-bold text-[#1D1D1F]">What&apos;s Included</h2>
                 </div>
                 <StaggerContainer className="grid sm:grid-cols-2 gap-4">
-                  {service.features.map((feature) => (
+                  {(service.features ?? []).map((feature) => (
                     <StaggerItem key={feature}>
                       <div className="flex items-start gap-3 bg-white rounded-xl border border-black/[0.08] shadow-sm p-4">
                         <CheckCircle2 className="h-5 w-5 text-[#1A237E] shrink-0 mt-0.5" />
@@ -128,7 +128,7 @@ export default function CountyServicePage({ countySlug, serviceSlug }: CountySer
                   <h2 className="text-2xl font-bold text-[#1D1D1F]">Frequently Asked Questions</h2>
                 </div>
                 <div className="space-y-4">
-                  {service.faqs.map((faq) => (
+                  {(service.faqs ?? []).map((faq) => (
                     <div key={faq.q} className="bg-white rounded-xl border border-black/[0.08] shadow-sm p-6">
                       <h3 className="font-semibold text-[#1D1D1F] mb-2">{faq.q}</h3>
                       <p className="text-sm text-[#6E6E73]">{faq.a}</p>
@@ -171,7 +171,7 @@ export default function CountyServicePage({ countySlug, serviceSlug }: CountySer
                 <div className="bg-white rounded-2xl border border-black/[0.08] shadow-sm p-6">
                   <h4 className="font-semibold text-[#1D1D1F] mb-4">Areas We Serve in {county.name}</h4>
                   <div className="flex flex-wrap gap-2">
-                    {county.cities.map((city) => (
+                    {(county.cities ?? []).map((city) => (
                       <span
                         key={city}
                         className="px-3 py-1.5 bg-[#F5F5F7] text-[#6E6E73] rounded-lg text-xs font-medium border border-black/[0.08]"
@@ -192,7 +192,7 @@ export default function CountyServicePage({ countySlug, serviceSlug }: CountySer
                       .map((s) => (
                         <button
                           key={s.slug}
-                          onClick={() => navigate(`county/${countySlug}/service/${s.slug}`)}
+                          onClick={() => navigate(`county/${countySlug}/service/${s.slug}` as PageKey)}
                           className="w-full text-left flex items-center gap-3 p-2 rounded-lg hover:bg-[#F5F5F7] transition-colors group"
                         >
                           <s.icon className="h-4 w-4 text-[#1A237E]" />

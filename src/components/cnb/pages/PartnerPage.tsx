@@ -20,6 +20,7 @@ import {
   ArrowRight,
 } from 'lucide-react';
 import { toast } from 'sonner';
+import { trackFormSubmit } from '@/lib/ghl-tracking';
 
 const TRADE_OPTIONS = [
   'Roofing',
@@ -63,23 +64,47 @@ export default function PartnerPage() {
 
     setIsSubmitting(true);
 
-    // Simulate submission — no API call needed for alpha
-    await new Promise((resolve) => setTimeout(resolve, 1500));
+    try {
+      const res = await fetch('/api/partners', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          companyName: form.businessName,
+          contactName: form.yourName,
+          email: form.email,
+          phone: form.phone,
+          serviceCategories: form.trade,
+          licenseNumber: form.licenseNumber,
+          serviceAreas: 'Orange County, Los Angeles County',
+          yearsInBusiness: form.referral || undefined,
+        }),
+      });
 
-    toast.success('Application submitted! Our team will contact you within 48 hours.');
+      const data = await res.json();
 
-    // Reset form
-    setForm({
-      businessName: '',
-      yourName: '',
-      email: '',
-      phone: '',
-      trade: '',
-      licenseNumber: '',
-      referral: '',
-    });
-    setCommitChecked(false);
-    setIsSubmitting(false);
+      if (res.ok) {
+        toast.success('Application submitted! Our team will contact you within 48 hours.');
+        trackFormSubmit('partner', { business_name: form.businessName, email: form.email });
+
+        // Reset form
+        setForm({
+          businessName: '',
+          yourName: '',
+          email: '',
+          phone: '',
+          trade: '',
+          licenseNumber: '',
+          referral: '',
+        });
+        setCommitChecked(false);
+      } else {
+        toast.error(data.error || 'Something went wrong. Please try again.');
+      }
+    } catch {
+      toast.error('Network error. Please check your connection and try again.');
+    } finally {
+      setIsSubmitting(false);
+    }
   }
 
   return (

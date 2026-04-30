@@ -107,7 +107,7 @@ export default function CountyPage({ slug }: CountyPageProps) {
           </AnimatedSection>
           <AnimatedSection delay={0.1}>
             <div className="flex flex-wrap justify-center gap-3 max-w-4xl mx-auto">
-              {county.cities.map((city) => (
+              {county.cities?.map((city) => (
                 <div
                   key={city}
                   className="inline-flex items-center gap-2 px-4 py-2.5 rounded-full bg-[#F5F5F7] text-[#1D1D1F] border border-black/[0.08] hover:bg-[#1A237E]/10 hover:border-[#1A237E]/20 transition-colors text-sm font-medium"
