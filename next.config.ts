@@ -1,15 +1,12 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: "standalone",
+  // Vercel handles output automatically — standalone is only for self-hosted
   typescript: {
     ignoreBuildErrors: true,
   },
   reactStrictMode: false,
-  allowedDevOrigins: [
-    'preview-chat-d6ea615d-9576-417f-952e-ac1b10b2141c.space.z.ai',
-    'localhost:3000',
-  ],
+  allowedDevOrigins: ['*'],
   images: {
     remotePatterns: [
       {
