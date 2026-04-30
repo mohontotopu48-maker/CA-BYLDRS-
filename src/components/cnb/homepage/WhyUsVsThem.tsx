@@ -155,7 +155,7 @@ export default function WhyUsVsThem() {
             className="bg-[#1A237E] hover:bg-[#0D1754] text-white font-semibold px-8 py-4 text-base sm:text-lg rounded-full shadow-[0_2px_16px_rgba(26,35,126,0.2)] hover:shadow-[0_4px_24px_rgba(26,35,126,0.3)] transition-all duration-300 cursor-pointer h-auto"
             onClick={() => navigate('apply')}
           >
-            Start Your $500 Performance Audit
+            Start Your $500 Audit
             <ChevronRight className="size-5 ml-1" />
           </Button>
         </AnimatedSection>

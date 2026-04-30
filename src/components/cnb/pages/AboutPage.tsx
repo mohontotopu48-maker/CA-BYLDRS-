@@ -225,7 +225,7 @@ export default function AboutPage() {
               size="lg"
               className="bg-[#1A237E] hover:bg-[#0D1754] text-white font-semibold px-8 h-12 text-base rounded-full shadow-sm cursor-pointer"
             >
-              Start Your Authority Build
+              Start Your $500 Audit
               <ArrowRight className="size-4 ml-2" />
             </Button>
           </AnimatedSection>
@@ -276,14 +276,14 @@ export default function AboutPage() {
               Ready to Join the Elite Alliance?
             </h2>
             <p className="text-[#6E6E73] text-lg mb-8 max-w-xl mx-auto">
-              Limited spots available in each territory. What if your entire marketing operation cost less than your daily coffee runs? Start your $500 Performance Audit today.
+              Limited spots available in each territory. What if your entire marketing operation cost less than your daily coffee runs? Start your $500 Audit today.
             </p>
             <Button
               onClick={() => navigate('apply')}
               size="lg"
               className="bg-[#1A237E] hover:bg-[#0D1754] text-white font-semibold px-8 h-12 text-base rounded-full shadow-sm cursor-pointer"
             >
-              Start Your $500 Performance Audit
+              Start Your $500 Audit
               <ArrowRight className="size-4 ml-2" />
             </Button>
           </AnimatedSection>

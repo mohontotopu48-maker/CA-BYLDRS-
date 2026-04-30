@@ -44,7 +44,7 @@ export default function HeroSection() {
           {/* Sub-headline */}
           <AnimatedSection delay={0.25}>
             <p className="mt-6 sm:mt-8 text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              Most contractors buy leads. CA BYLDRS members own the market. Start your $500 Performance Audit today to begin your journey toward Guardian Certification. We build your Personal Brand, automate your Sales Engine, and grant you the BYLDRS Guardian Gold Seal to justify premium margins and close deals faster.
+              Most contractors buy leads. CA BYLDRS members own the market. Start your $500 Audit today to begin your journey toward Guardian Certification. We build your Personal Brand, automate your Sales Engine, and grant you the BYLDRS Guardian Gold Seal to justify premium margins and close deals faster.
             </p>
           </AnimatedSection>
 

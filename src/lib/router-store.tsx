@@ -11,6 +11,9 @@ export type PageKey =
   | 'proshop'
   | 'proportal'
   | 'apply'
+  | 'contact'
+  | 'emergency'
+  | 'partner'
   | 'privacy'
   | 'terms';
 
@@ -35,7 +38,10 @@ const pageTitles: Record<string, string> = {
   alliance: 'The Alliance — CA BYLDRS Network',
   proshop: 'Pro-Shop — Guardian Gear',
   proportal: 'Pro-Portal — Guardian Path',
-  apply: 'Start Your $500 Performance Audit',
+  apply: 'Start Your $500 Audit',
+  contact: 'Contact Us',
+  emergency: 'Emergency Services',
+  partner: 'Partner Application',
   privacy: 'Privacy Policy',
   terms: 'Terms of Service',
 };

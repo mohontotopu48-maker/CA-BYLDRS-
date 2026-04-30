@@ -92,7 +92,7 @@ export default function PartnerPage() {
               <Rocket className="w-10 h-10 text-white" />
             </div>
             <span className="inline-block text-xs font-semibold tracking-widest uppercase text-[#1A237E] mb-4">
-              Start Your $500 Performance Audit
+              Start Your $500 Audit
             </span>
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#1D1D1F] leading-tight tracking-tight mb-4">
               The End of the Lead Gen Lottery.

@@ -201,7 +201,7 @@ export default function ServicesOverviewPage() {
                 size="lg"
                 className="bg-[#1A237E] hover:bg-[#0D1754] text-white font-semibold px-8 h-12 text-base rounded-full shadow-[0_2px_16px_rgba(26,35,126,0.2)] hover:shadow-[0_4px_24px_rgba(26,35,126,0.3)] transition-all duration-300 cursor-pointer"
               >
-                Request a Guardian-Vetted Partner
+                Start Your $500 Audit
                 <ArrowRight className="size-4 ml-2" />
               </Button>
             </div>
@@ -425,7 +425,7 @@ export default function ServicesOverviewPage() {
                 size="lg"
                 className="bg-[#D4AF37] hover:bg-[#B8860B] text-[#0A1628] font-bold px-8 h-12 text-base rounded-full shadow-[0_2px_16px_rgba(212,175,55,0.25)] hover:shadow-[0_4px_24px_rgba(212,175,55,0.35)] transition-all duration-300 cursor-pointer"
               >
-                Apply for the 20-Point Audit
+                Start Your $500 Audit
                 <ArrowRight className="size-4 ml-2" />
               </Button>
             </div>
@@ -451,7 +451,7 @@ export default function ServicesOverviewPage() {
                 size="lg"
                 className="bg-[#1A237E] hover:bg-[#0D1754] text-white font-semibold px-8 h-12 text-base rounded-full shadow-sm cursor-pointer"
               >
-                Request a Guardian-Vetted Partner
+                Start Your $500 Audit
                 <ArrowRight className="size-4 ml-2" />
               </Button>
               <Button

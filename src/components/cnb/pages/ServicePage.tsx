@@ -188,7 +188,7 @@ export default function ServicePage() {
               size="lg"
               className="bg-[#1A237E] hover:bg-[#0D1754] text-white font-semibold px-8 h-12 text-base rounded-full shadow-sm cursor-pointer"
             >
-              Start Your $500 Performance Audit
+              Start Your $500 Audit
               <ArrowRight className="size-4 ml-2" />
             </Button>
           </AnimatedSection>

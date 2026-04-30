@@ -23,7 +23,7 @@ export default function HighIntentCTA() {
 
           {/* Subheadline */}
           <p className="text-lg sm:text-xl text-white/80 max-w-3xl mx-auto leading-relaxed mb-10">
-            Start your $500 Performance Audit today and begin your journey toward Guardian Certification. NXLBYLDR™ scales businesses using an exclusive 8-channel ecosystem to deliver more Calls, Clicks, and Customers — with the Guardian Gold Seal, personal brand content, and automated ads. Proven before you invest.
+            Start your $500 Audit today and begin your journey toward Guardian Certification. NXLBYLDR™ scales businesses using an exclusive 8-channel ecosystem to deliver more Calls, Clicks, and Customers — with the Guardian Gold Seal, personal brand content, and automated ads. Proven before you invest.
           </p>
 
           {/* CTA Buttons */}

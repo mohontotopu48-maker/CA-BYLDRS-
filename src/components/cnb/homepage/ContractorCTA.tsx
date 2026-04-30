@@ -95,10 +95,10 @@ export default function ContractorCTA() {
               {/* CTA */}
               <StaggerItem>
                 <button
-                  onClick={() => navigate('partner')}
+                  onClick={() => navigate('apply')}
                   className="apple-btn-primary group mt-4 inline-flex items-center gap-2 text-base cursor-pointer"
                 >
-                  Apply to Join — Free
+                  Start Your $500 Audit
                   <ChevronRight className="h-5 w-5 transition-transform duration-200 group-hover:translate-x-1" />
                 </button>
               </StaggerItem>

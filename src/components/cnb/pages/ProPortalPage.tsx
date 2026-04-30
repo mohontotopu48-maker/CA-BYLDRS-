@@ -105,7 +105,7 @@ export default function ProPortalPage() {
               className="bg-white text-[#1A237E] hover:bg-[#F5F5F7] font-semibold px-8 py-4 text-base sm:text-lg rounded-full transition-all duration-300 shadow-lg shadow-black/20 cursor-pointer"
             >
               <span className="inline-flex items-center gap-2">
-                Start Your $500 Performance Audit
+                Start Your $500 Audit
                 <ArrowRight className="h-5 w-5" />
               </span>
             </button>
@@ -286,7 +286,7 @@ export default function ProPortalPage() {
                   className="bg-[#1A237E] hover:bg-[#0D1754] text-white font-semibold px-8 py-3.5 text-base rounded-full transition-all duration-300 shadow-sm cursor-pointer"
                 >
                   <span className="inline-flex items-center gap-2">
-                    Stop the Leak — Start Your Audit
+                    Start Your $500 Audit
                     <ArrowRight className="h-4 w-4" />
                   </span>
                 </button>
@@ -379,7 +379,7 @@ export default function ProPortalPage() {
               className="bg-[#1A237E] hover:bg-[#0D1754] text-white font-semibold px-8 py-4 text-base sm:text-lg rounded-full transition-all duration-300 shadow-sm cursor-pointer"
             >
               <span className="inline-flex items-center gap-2">
-                Qualify Your Business — Apply Now
+                Start Your $500 Audit
                 <ChevronRight className="h-5 w-5" />
               </span>
             </button>
@@ -405,7 +405,7 @@ export default function ProPortalPage() {
               className="bg-white text-[#1A237E] hover:bg-[#F5F5F7] font-semibold px-8 py-4 text-base sm:text-lg rounded-full transition-all duration-300 shadow-lg shadow-black/20 cursor-pointer"
             >
               <span className="inline-flex items-center gap-2">
-                Start Your $500 Audit Now
+                Start Your $500 Audit
                 <ArrowRight className="h-5 w-5" />
               </span>
             </button>

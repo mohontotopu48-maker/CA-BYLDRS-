@@ -21,6 +21,8 @@ import {
   CalendarClock,
   ShieldOff,
   Building2,
+  Wrench,
+  Sparkles,
   type LucideIcon,
 } from "lucide-react";
 
@@ -444,6 +446,39 @@ export const integrityStandard = {
     description: "High-impact Guardian Authority Video introducing the contractor, their story, and their 'Why' — produced by our team as part of the Alpha Trial to maximize trust before the first call.",
   },
 };
+
+/* ─── Services ─── */
+export interface ServiceItem {
+  slug: string;
+  name: string;
+  icon: LucideIcon;
+  description: string;
+}
+
+export const services: ServiceItem[] = [
+  { slug: 'roofing', name: 'Roofing', icon: Shield, description: 'Expert roof repair, replacement, and maintenance.' },
+  { slug: 'hvac', name: 'HVAC', icon: Zap, description: 'Heating, ventilation, and air conditioning services.' },
+  { slug: 'plumbing', name: 'Plumbing', icon: Wrench, description: 'Full-service plumbing repair and installation.' },
+  { slug: 'electrical', name: 'Electrical', icon: Zap, description: 'Licensed electrical work for homes and businesses.' },
+  { slug: 'painting', name: 'Painting', icon: Sparkles, description: 'Interior and exterior painting services.' },
+  { slug: 'landscaping', name: 'Landscaping', icon: Landmark, description: 'Professional landscaping design and maintenance.' },
+];
+
+/* ─── Counties ─── */
+export interface CountyItem {
+  slug: string;
+  name: string;
+  description: string;
+  image: string;
+}
+
+export const counties: CountyItem[] = [
+  { slug: 'orange-county', name: 'Orange County', description: 'Full service coverage across Orange County', image: '/oc.jpg' },
+  { slug: 'los-angeles-county', name: 'Los Angeles County', description: 'Full service coverage across Los Angeles County', image: '/la.jpg' },
+];
+
+/* ─── County Services ─── */
+export const countyServices = services.map((s) => ({ slug: s.slug }));
 
 /* ─── Trust Stats ─── */
 export const trustStats = [

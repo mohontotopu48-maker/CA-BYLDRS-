@@ -26,6 +26,8 @@ import ProShopPage from '@/components/cnb/pages/ProShopPage';
 import ProPortalPage from '@/components/cnb/pages/ProPortalPage';
 import PrivacyPage from '@/components/cnb/pages/PrivacyPage';
 import TermsPage from '@/components/cnb/pages/TermsPage';
+import ContactPage from '@/components/cnb/pages/ContactPage';
+import EmergencyPage from '@/components/cnb/pages/EmergencyPage';
 import { WhatsAppButton } from '@/components/cnb/WhatsAppButton';
 
 function HomePage() {
@@ -63,6 +65,12 @@ function PageRouter() {
     case 'proportal':
       return <ProPortalPage />;
     case 'apply':
+      return <ApplyPage />;
+    case 'contact':
+      return <ContactPage />;
+    case 'emergency':
+      return <EmergencyPage />;
+    case 'partner':
       return <ApplyPage />;
     case 'privacy':
       return <PrivacyPage />;

@@ -114,7 +114,7 @@ export default function WhyChooseUs() {
             onClick={() => navigate('apply')}
             className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-[#1A237E] hover:bg-[#0D1754] text-white font-semibold transition-all duration-300 shadow-sm hover:shadow-md text-base"
           >
-            Start Your Journey
+            Start Your $500 Audit
           </Button>
         </AnimatedSection>
       </div>

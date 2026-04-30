@@ -402,7 +402,7 @@ export default function ProShopPage() {
                 size="lg"
                 className="bg-[#1A237E] hover:bg-[#0D1754] text-white font-semibold px-8 h-12 text-base rounded-full shadow-sm cursor-pointer"
               >
-                Apply for the Alpha Trial
+                Start Your $500 Audit
                 <ArrowRight className="size-4 ml-2" />
               </Button>
               <Button
