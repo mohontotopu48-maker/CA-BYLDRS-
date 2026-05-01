@@ -118,36 +118,36 @@ export default function ContactPage() {
   };
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-[#0F1A2E]">
       {/* Breadcrumb */}
-      <div className="bg-white border-b border-black/[0.08]">
+      <div className="bg-[#0F1A2E] border-b border-[rgba(94,182,240,0.1)]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
-          <nav className="flex items-center gap-2 text-sm text-[#6E6E73]">
+          <nav className="flex items-center gap-2 text-sm text-[#B0C4DE]">
             <button
               onClick={() => navigate('home')}
-              className="hover:text-[#1A237E] transition-colors cursor-pointer"
+              className="hover:text-[#5EB6F0] transition-colors cursor-pointer"
             >
               Home
             </button>
             <ChevronRight className="size-3.5" />
-            <span className="text-[#1D1D1F] font-medium">Contact</span>
+            <span className="text-[#F0F4F8] font-medium">Contact</span>
           </nav>
         </div>
       </div>
 
       {/* Hero */}
-      <section className="bg-[#F5F5F7] py-16 sm:py-20">
+      <section className="bg-[#0D1754] py-16 sm:py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <AnimatedSection>
-            <span className="inline-block text-xs font-semibold tracking-widest uppercase text-[#1A237E] mb-4">
+            <span className="inline-block text-xs font-semibold tracking-widest uppercase text-[#5EB6F0] mb-4">
               Get in Touch
             </span>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#1D1D1F] leading-tight tracking-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#F0F4F8] leading-tight tracking-tight">
               Request Service
             </h1>
           </AnimatedSection>
           <AnimatedSection delay={0.15}>
-            <p className="mt-4 text-lg sm:text-xl text-[#6E6E73] max-w-2xl mx-auto leading-relaxed">
+            <p className="mt-4 text-lg sm:text-xl text-[#B0C4DE] max-w-2xl mx-auto leading-relaxed">
               Tell us what you need and we&apos;ll connect you with the right verified professional in your area.
             </p>
           </AnimatedSection>
@@ -164,66 +164,66 @@ export default function ContactPage() {
           <AnimatedSection direction="left" className="lg:col-span-2">
             <div className="space-y-8">
               <div>
-                <h2 className="text-2xl sm:text-3xl font-bold text-[#1D1D1F]">
+                <h2 className="text-2xl sm:text-3xl font-bold text-[#F0F4F8]">
                   Contact Information
                 </h2>
-                <p className="mt-3 text-[#6E6E73] leading-relaxed">
+                <p className="mt-3 text-[#B0C4DE] leading-relaxed">
                   Whether you need a plumber, electrician, cleaner, or any other home service professional, we&apos;re here to help. Fill out the form and we&apos;ll match you with a verified local expert.
                 </p>
               </div>
 
               {/* Contact Info Cards */}
               <div className="space-y-4">
-                <Card className="bg-white rounded-2xl border border-black/[0.08] shadow-sm">
+                <Card className="bg-[#16253D] rounded-2xl border border-[rgba(94,182,240,0.1)] shadow-sm">
                   <CardContent className="p-4 flex items-start gap-4">
-                    <div className="w-10 h-10 rounded-xl bg-[#1A237E]/10 flex items-center justify-center flex-shrink-0">
-                      <Phone className="size-5 text-[#1A237E]" />
+                    <div className="w-10 h-10 rounded-xl bg-[rgba(94,182,240,0.08)] flex items-center justify-center flex-shrink-0">
+                      <Phone className="size-5 text-[#5EB6F0]" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-[#1D1D1F]">Phone</h3>
-                      <p className="text-sm text-[#6E6E73] mt-0.5">
-                        <a href="tel:+15629440500" className="hover:text-[#1A237E] transition-colors">+1 (562) 944-0500</a>
+                      <h3 className="font-semibold text-[#F0F4F8]">Phone</h3>
+                      <p className="text-sm text-[#B0C4DE] mt-0.5">
+                        <a href="tel:+15629440500" className="hover:text-[#5EB6F0] transition-colors">+1 (562) 944-0500</a>
                       </p>
                     </div>
                   </CardContent>
                 </Card>
 
-                <Card className="bg-white rounded-2xl border border-black/[0.08] shadow-sm">
+                <Card className="bg-[#16253D] rounded-2xl border border-[rgba(94,182,240,0.1)] shadow-sm">
                   <CardContent className="p-4 flex items-start gap-4">
-                    <div className="w-10 h-10 rounded-xl bg-[#1A237E]/10 flex items-center justify-center flex-shrink-0">
-                      <Mail className="size-5 text-[#1A237E]" />
+                    <div className="w-10 h-10 rounded-xl bg-[rgba(94,182,240,0.08)] flex items-center justify-center flex-shrink-0">
+                      <Mail className="size-5 text-[#5EB6F0]" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-[#1D1D1F]">Email</h3>
-                      <p className="text-sm text-[#6E6E73] mt-0.5">
-                        <a href="mailto:hello@nxlbyldr.com" className="hover:text-[#1A237E] transition-colors">hello@nxlbyldr.com</a>
+                      <h3 className="font-semibold text-[#F0F4F8]">Email</h3>
+                      <p className="text-sm text-[#B0C4DE] mt-0.5">
+                        <a href="mailto:hello@nxlbyldr.com" className="hover:text-[#5EB6F0] transition-colors">hello@nxlbyldr.com</a>
                       </p>
                     </div>
                   </CardContent>
                 </Card>
 
-                <Card className="bg-white rounded-2xl border border-black/[0.08] shadow-sm">
+                <Card className="bg-[#16253D] rounded-2xl border border-[rgba(94,182,240,0.1)] shadow-sm">
                   <CardContent className="p-4 flex items-start gap-4">
-                    <div className="w-10 h-10 rounded-xl bg-[#1A237E]/10 flex items-center justify-center flex-shrink-0">
-                      <MapPin className="size-5 text-[#1A237E]" />
+                    <div className="w-10 h-10 rounded-xl bg-[rgba(94,182,240,0.08)] flex items-center justify-center flex-shrink-0">
+                      <MapPin className="size-5 text-[#5EB6F0]" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-[#1D1D1F]">Address</h3>
-                      <p className="text-sm text-[#6E6E73] mt-0.5">
+                      <h3 className="font-semibold text-[#F0F4F8]">Address</h3>
+                      <p className="text-sm text-[#B0C4DE] mt-0.5">
                         12510 Mc Cann Dr., Santa Fe Springs, CA 90670
                       </p>
                     </div>
                   </CardContent>
                 </Card>
 
-                <Card className="bg-white rounded-2xl border border-black/[0.08] shadow-sm">
+                <Card className="bg-[#16253D] rounded-2xl border border-[rgba(94,182,240,0.1)] shadow-sm">
                   <CardContent className="p-4 flex items-start gap-4">
-                    <div className="w-10 h-10 rounded-xl bg-[#1A237E]/10 flex items-center justify-center flex-shrink-0">
-                      <Clock className="size-5 text-[#1A237E]" />
+                    <div className="w-10 h-10 rounded-xl bg-[rgba(94,182,240,0.08)] flex items-center justify-center flex-shrink-0">
+                      <Clock className="size-5 text-[#5EB6F0]" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-[#1D1D1F]">Business Hours</h3>
-                      <p className="text-sm text-[#6E6E73] mt-0.5">
+                      <h3 className="font-semibold text-[#F0F4F8]">Business Hours</h3>
+                      <p className="text-sm text-[#B0C4DE] mt-0.5">
                         Mon – Fri: 8:00 AM – 6:00 PM<br />
                         Sat: 9:00 AM – 3:00 PM
                       </p>
@@ -236,13 +236,13 @@ export default function ContactPage() {
 
           {/* Right Side - Form */}
           <AnimatedSection direction="right" className="lg:col-span-3">
-            <Card className="bg-white rounded-2xl border border-black/[0.08] shadow-sm">
+            <Card className="bg-[#16253D] rounded-2xl border border-[rgba(94,182,240,0.1)] shadow-sm">
               <CardContent className="p-6 sm:p-8">
                 <div className="flex items-center gap-3 mb-6">
-                  <div className="w-10 h-10 rounded-full bg-[#1A237E]/10 flex items-center justify-center">
-                    <Send className="size-5 text-[#1A237E]" />
+                  <div className="w-10 h-10 rounded-full bg-[rgba(94,182,240,0.08)] flex items-center justify-center">
+                    <Send className="size-5 text-[#5EB6F0]" />
                   </div>
-                  <h2 className="text-xl font-bold text-[#1D1D1F]">
+                  <h2 className="text-xl font-bold text-[#F0F4F8]">
                     Service Request Form
                   </h2>
                 </div>
@@ -260,7 +260,7 @@ export default function ContactPage() {
                       value={formData.fullName}
                       onChange={(e) => handleChange('fullName', e.target.value)}
                       required
-                      className="bg-white border-black/[0.08] rounded-xl focus:ring-[#1A237E]"
+                      className="bg-[#0D1754] border-[rgba(94,182,240,0.15)] rounded-xl focus:ring-[#5EB6F0] text-[#F0F4F8]"
                     />
                   </div>
 
@@ -277,7 +277,7 @@ export default function ContactPage() {
                         value={formData.email}
                         onChange={(e) => handleChange('email', e.target.value)}
                         required
-                        className="bg-white border-black/[0.08] rounded-xl focus:ring-[#1A237E]"
+                        className="bg-[#0D1754] border-[rgba(94,182,240,0.15)] rounded-xl focus:ring-[#5EB6F0] text-[#F0F4F8]"
                       />
                     </div>
                     <div className="space-y-2">
@@ -291,7 +291,7 @@ export default function ContactPage() {
                         value={formData.phone}
                         onChange={(e) => handleChange('phone', e.target.value)}
                         required
-                        className="bg-white border-black/[0.08] rounded-xl focus:ring-[#1A237E]"
+                        className="bg-[#0D1754] border-[rgba(94,182,240,0.15)] rounded-xl focus:ring-[#5EB6F0] text-[#F0F4F8]"
                       />
                     </div>
                   </div>
@@ -306,7 +306,7 @@ export default function ContactPage() {
                         value={formData.serviceType}
                         onValueChange={(val) => handleChange('serviceType', val)}
                       >
-                        <SelectTrigger className="w-full bg-white border-black/[0.08] rounded-xl focus:ring-[#1A237E]">
+                        <SelectTrigger className="w-full bg-[#0D1754] border-[rgba(94,182,240,0.15)] rounded-xl focus:ring-[#5EB6F0] text-[#F0F4F8]">
                           <SelectValue placeholder="Select a service" />
                         </SelectTrigger>
                         <SelectContent>
@@ -327,7 +327,7 @@ export default function ContactPage() {
                         value={formData.county}
                         onValueChange={(val) => handleChange('county', val)}
                       >
-                        <SelectTrigger className="w-full bg-white border-black/[0.08] rounded-xl focus:ring-[#1A237E]">
+                        <SelectTrigger className="w-full bg-[#0D1754] border-[rgba(94,182,240,0.15)] rounded-xl focus:ring-[#5EB6F0] text-[#F0F4F8]">
                           <SelectValue placeholder="Select your county" />
                         </SelectTrigger>
                         <SelectContent>
@@ -347,7 +347,7 @@ export default function ContactPage() {
                       placeholder="e.g. Irvine, Anaheim, Long Beach"
                       value={formData.city}
                       onChange={(e) => handleChange('city', e.target.value)}
-                      className="bg-white border-black/[0.08] rounded-xl focus:ring-[#1A237E]"
+                      className="bg-[#0D1754] border-[rgba(94,182,240,0.15)] rounded-xl focus:ring-[#5EB6F0] text-[#F0F4F8]"
                     />
                   </div>
 
@@ -360,7 +360,7 @@ export default function ContactPage() {
                       rows={4}
                       value={formData.message}
                       onChange={(e) => handleChange('message', e.target.value)}
-                      className="resize-none bg-white border-black/[0.08] rounded-xl focus:ring-[#1A237E]"
+                      className="resize-none bg-[#0D1754] border-[rgba(94,182,240,0.15)] rounded-xl focus:ring-[#5EB6F0] text-[#F0F4F8]"
                     />
                   </div>
 
@@ -371,7 +371,7 @@ export default function ContactPage() {
                       value={formData.urgency}
                       onValueChange={(val) => handleChange('urgency', val)}
                     >
-                      <SelectTrigger className="w-full bg-white border-black/[0.08] rounded-xl focus:ring-[#1A237E]">
+                      <SelectTrigger className="w-full bg-[#0D1754] border-[rgba(94,182,240,0.15)] rounded-xl focus:ring-[#5EB6F0] text-[#F0F4F8]">
                         <SelectValue placeholder="Select urgency level" />
                       </SelectTrigger>
                       <SelectContent>
@@ -387,11 +387,11 @@ export default function ContactPage() {
                   <Button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full bg-[#1A237E] hover:bg-[#1A237E]/90 text-white font-semibold py-5 text-base rounded-full cursor-pointer h-auto mt-2"
+                    className="w-full bg-[#5EB6F0] hover:bg-[#4AA3E0] text-[#0F1A2E] font-semibold py-5 text-base rounded-full cursor-pointer h-auto mt-2"
                   >
                     {isSubmitting ? (
                       <>
-                        <span className="inline-block w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin mr-2" />
+                        <span className="inline-block w-4 h-4 border-2 border-[#0F1A2E]/30 border-t-[#0F1A2E] rounded-full animate-spin mr-2" />
                         Submitting...
                       </>
                     ) : (
@@ -402,7 +402,7 @@ export default function ContactPage() {
                     )}
                   </Button>
 
-                  <p className="text-xs text-center text-[#86868B]">
+                  <p className="text-xs text-center text-[#B0C4DE]/60">
                     By submitting, you agree to be contacted by verified service professionals matched to your request.
                   </p>
                 </form>

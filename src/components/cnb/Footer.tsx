@@ -38,19 +38,19 @@ export function Footer() {
   };
 
   return (
-    <footer className="bg-[#F5F5F7]">
+    <footer className="bg-[#0D1754]">
       {/* Main Footer */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-20">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12">
           {/* Brand Column */}
           <div className="lg:col-span-1">
             <img
-              src="https://i.ibb.co/6308JrK/image.png"
+              src="/logo-white.png"
               alt="CA BYLDRS Logo"
               width={192} height={64}
-              className="h-14 w-auto object-contain mb-5 drop-shadow-sm"
+              className="h-14 w-auto object-contain mb-5"
             />
-            <p className="text-sm text-[#6E6E73] mb-5 leading-relaxed">
+            <p className="text-sm text-[#B0C4DE] mb-5 leading-relaxed">
               The Elite B2B Unified Referral Network for Licensed Contractors in OC &amp; LA County.
             </p>
 
@@ -65,7 +65,7 @@ export function Footer() {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label={social.label}
-                    className="w-9 h-9 rounded-full bg-white border border-black/[0.06] flex items-center justify-center text-[#6E6E73] hover:text-[#1A237E] hover:border-[#1A237E]/20 hover:shadow-sm transition-all duration-200"
+                    className="w-9 h-9 rounded-full bg-[#16253D] border border-[rgba(94,182,240,0.15)] flex items-center justify-center text-[#B0C4DE] hover:text-[#5EB6F0] hover:border-[rgba(94,182,240,0.3)] transition-all duration-200"
                   >
                     <Icon className="w-4 h-4" />
                   </a>
@@ -74,16 +74,16 @@ export function Footer() {
             </div>
 
             <div className="space-y-3">
-              <div className="flex items-center gap-2 text-sm text-[#6E6E73]">
-                <Phone className="h-4 w-4 text-[#1A237E] shrink-0" />
-                <a href="tel:+15629440500" className="hover:text-[#1A237E] transition-colors duration-200">+1 (562) 944-0500</a>
+              <div className="flex items-center gap-2 text-sm text-[#B0C4DE]">
+                <Phone className="h-4 w-4 text-[#5EB6F0] shrink-0" />
+                <a href="tel:+15629440500" className="hover:text-[#5EB6F0] transition-colors duration-200">+1 (562) 944-0500</a>
               </div>
-              <div className="flex items-center gap-2 text-sm text-[#6E6E73]">
-                <Mail className="h-4 w-4 text-[#1A237E] shrink-0" />
-                <a href="mailto:hello@nxlbyldr.com" className="hover:text-[#1A237E] transition-colors duration-200">hello@nxlbyldr.com</a>
+              <div className="flex items-center gap-2 text-sm text-[#B0C4DE]">
+                <Mail className="h-4 w-4 text-[#5EB6F0] shrink-0" />
+                <a href="mailto:hello@nxlbyldr.com" className="hover:text-[#5EB6F0] transition-colors duration-200">hello@nxlbyldr.com</a>
               </div>
-              <div className="flex items-center gap-2 text-sm text-[#6E6E73]">
-                <MapPin className="h-4 w-4 text-[#1A237E] shrink-0" />
+              <div className="flex items-center gap-2 text-sm text-[#B0C4DE]">
+                <MapPin className="h-4 w-4 text-[#5EB6F0] shrink-0" />
                 <span>12510 Mc Cann Dr., Santa Fe Springs, CA 90670</span>
               </div>
             </div>
@@ -91,7 +91,7 @@ export function Footer() {
 
           {/* Platform Column */}
           <div>
-            <h3 className="text-[#1D1D1F] font-semibold text-sm uppercase tracking-wider mb-5">
+            <h3 className="text-[#F0F4F8] font-semibold text-sm uppercase tracking-wider mb-5">
               Platform
             </h3>
             <ul className="space-y-2.5">
@@ -99,7 +99,7 @@ export function Footer() {
                 <li key={link.href}>
                   <button
                     onClick={() => handleNav(link.href)}
-                    className="text-sm text-[#6E6E73] hover:text-[#1A237E] transition-colors duration-200 flex items-center gap-1.5 group"
+                    className="text-sm text-[#B0C4DE] hover:text-[#5EB6F0] transition-colors duration-200 flex items-center gap-1.5 group"
                   >
                     <ChevronRight className="h-3 w-3 opacity-0 -ml-5 group-hover:opacity-100 group-hover:ml-0 transition-all duration-200" />
                     {link.label}
@@ -111,7 +111,7 @@ export function Footer() {
 
           {/* Company Column */}
           <div>
-            <h3 className="text-[#1D1D1F] font-semibold text-sm uppercase tracking-wider mb-5">
+            <h3 className="text-[#F0F4F8] font-semibold text-sm uppercase tracking-wider mb-5">
               Company
             </h3>
             <ul className="space-y-2.5">
@@ -119,7 +119,7 @@ export function Footer() {
                 <li key={link.href}>
                   <button
                     onClick={() => handleNav(link.href)}
-                    className="text-sm text-[#6E6E73] hover:text-[#1A237E] transition-colors duration-200 flex items-center gap-1.5 group"
+                    className="text-sm text-[#B0C4DE] hover:text-[#5EB6F0] transition-colors duration-200 flex items-center gap-1.5 group"
                   >
                     <ChevronRight className="h-3 w-3 opacity-0 -ml-5 group-hover:opacity-100 group-hover:ml-0 transition-all duration-200" />
                     {link.label}
@@ -131,42 +131,42 @@ export function Footer() {
 
           {/* Trust & CTA Column */}
           <div>
-            <h3 className="text-[#1D1D1F] font-semibold text-sm uppercase tracking-wider mb-5">
+            <h3 className="text-[#F0F4F8] font-semibold text-sm uppercase tracking-wider mb-5">
               Why Contractors Choose Us
             </h3>
             <div className="space-y-4 mb-8">
               <div className="flex items-start gap-3">
-                <div className="mt-0.5 p-2 rounded-xl bg-white shadow-sm">
-                  <Cpu className="h-4 w-4 text-[#1A237E]" />
+                <div className="mt-0.5 p-2 rounded-xl bg-[#16253D]">
+                  <Cpu className="h-4 w-4 text-[#5EB6F0]" />
                 </div>
                 <div>
-                  <p className="text-sm text-[#1D1D1F] font-medium">Done-For-You Engine</p>
-                  <p className="text-xs text-[#86868B]">Automated sales pipeline from lead to close</p>
+                  <p className="text-sm text-[#F0F4F8] font-medium">Done-For-You Engine</p>
+                  <p className="text-xs text-[#B0C4DE]/60">Automated sales pipeline from lead to close</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
-                <div className="mt-0.5 p-2 rounded-xl bg-white shadow-sm">
-                  <Shield className="h-4 w-4 text-[#1A237E]" />
+                <div className="mt-0.5 p-2 rounded-xl bg-[#16253D]">
+                  <Shield className="h-4 w-4 text-[#5EB6F0]" />
                 </div>
                 <div>
-                  <p className="text-sm text-[#1D1D1F] font-medium">Exclusive Lead Flow</p>
-                  <p className="text-xs text-[#86868B]">No shared leads — no race to the bottom</p>
+                  <p className="text-sm text-[#F0F4F8] font-medium">Exclusive Lead Flow</p>
+                  <p className="text-xs text-[#B0C4DE]/60">No shared leads — no race to the bottom</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
-                <div className="mt-0.5 p-2 rounded-xl bg-white shadow-sm">
-                  <BarChart3 className="h-4 w-4 text-[#1A237E]" />
+                <div className="mt-0.5 p-2 rounded-xl bg-[#16253D]">
+                  <BarChart3 className="h-4 w-4 text-[#5EB6F0]" />
                 </div>
                 <div>
-                  <p className="text-sm text-[#1D1D1F] font-medium">Monthly Strategy Sync</p>
-                  <p className="text-xs text-[#86868B]">Data-driven growth sessions with our CSO team</p>
+                  <p className="text-sm text-[#F0F4F8] font-medium">Monthly Strategy Sync</p>
+                  <p className="text-xs text-[#B0C4DE]/60">Data-driven growth sessions with our CSO team</p>
                 </div>
               </div>
             </div>
 
             <button
               onClick={() => handleNav('apply')}
-              className="w-full apple-btn-primary text-sm py-3"
+              className="w-full bg-[#5EB6F0] text-[#0F1A2E] hover:bg-[#4AA3E0] text-sm py-3 rounded-full font-semibold transition-colors duration-200"
             >
               Start Your $500 Audit
               <ChevronRight className="h-4 w-4 ml-1 inline" />
@@ -176,24 +176,24 @@ export function Footer() {
       </div>
 
       {/* Bottom Bar */}
-      <div className="border-t border-[rgba(0,0,0,0.08)]">
+      <div className="border-t border-[rgba(94,182,240,0.1)]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
             <div className="text-center sm:text-left">
-              <p className="text-xs text-[#86868B]">
+              <p className="text-xs text-[#B0C4DE]/60">
                 &copy; 2026 VSUALdigitalmedia. All rights reserved. | Powered by NXLBYLDR&trade;
               </p>
             </div>
             <div className="flex items-center gap-6">
               <button
                 onClick={() => handleNav('privacy')}
-                className="text-xs text-[#86868B] hover:text-[#1D1D1F] transition-colors duration-200"
+                className="text-xs text-[#B0C4DE]/60 hover:text-[#F0F4F8] transition-colors duration-200"
               >
                 Privacy Policy
               </button>
               <button
                 onClick={() => handleNav('terms')}
-                className="text-xs text-[#86868B] hover:text-[#1D1D1F] transition-colors duration-200"
+                className="text-xs text-[#B0C4DE]/60 hover:text-[#F0F4F8] transition-colors duration-200"
               >
                 Terms of Service
               </button>
@@ -201,7 +201,7 @@ export function Footer() {
           </div>
           {/* Tagline */}
           <div className="mt-4 text-center sm:text-right">
-            <p className="text-[10px] font-semibold tracking-[0.15em] uppercase text-[#1A237E]/40">
+            <p className="text-[10px] font-semibold tracking-[0.15em] uppercase text-[#5EB6F0]/30">
               Own the Neighborhood. Win the Market. Become a Guardian.
             </p>
           </div>

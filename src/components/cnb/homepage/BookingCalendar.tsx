@@ -69,26 +69,26 @@ function StarRating({ count }: { count: number }) {
 
 function TestimonialCard({ testimonial }: { testimonial: Testimonial }) {
   return (
-    <div className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow duration-300 h-full flex flex-col">
+    <div className="bg-[#16253D] rounded-2xl p-6 shadow-sm hover:shadow-[0_4px_24px_rgba(94,182,240,0.08)] transition-shadow duration-300 h-full flex flex-col">
       {/* Quote Icon */}
       <div className="mb-4">
-        <Quote className="w-8 h-8 text-[#C5CAE9]" />
+        <Quote className="w-8 h-8 text-[#5EB6F0]/40" />
       </div>
 
       {/* Star Rating */}
       <StarRating count={testimonial.stars} />
 
       {/* Quote Text */}
-      <p className="mt-4 text-sm sm:text-base text-[#1D1D1F] leading-relaxed flex-1">
+      <p className="mt-4 text-sm sm:text-base text-[#F0F4F8] leading-relaxed flex-1">
         &ldquo;{testimonial.quote}&rdquo;
       </p>
 
       {/* Author Info */}
-      <div className="mt-6 pt-5 border-t border-[rgba(0,0,0,0.08)]">
-        <p className="text-sm font-semibold text-[#1D1D1F]">
+      <div className="mt-6 pt-5 border-t border-[rgba(94,182,240,0.1)]">
+        <p className="text-sm font-semibold text-[#F0F4F8]">
           {testimonial.name}
         </p>
-        <p className="text-xs text-[#86868B] mt-0.5">
+        <p className="text-xs text-[#B0C4DE]/60 mt-0.5">
           {testimonial.trade}
         </p>
       </div>
@@ -102,17 +102,17 @@ function TestimonialCard({ testimonial }: { testimonial: Testimonial }) {
 
 export default function BookingCalendar() {
   return (
-    <section className="bg-[#F5F5F7] py-20 md:py-28">
+    <section className="bg-[#0D1754] py-20 md:py-28">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <AnimatedSection className="text-center mb-14 md:mb-16">
-          <span className="inline-block text-sm font-semibold tracking-widest uppercase text-[#1A237E] mb-3">
+          <span className="inline-block text-sm font-semibold tracking-widest uppercase text-[#5EB6F0] mb-3">
             Partner Results
           </span>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#1D1D1F] mb-4 tracking-tight">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#F0F4F8] mb-4 tracking-tight">
             Hear From Our Alliance Members
           </h2>
-          <p className="text-lg text-[#6E6E73] max-w-2xl mx-auto leading-relaxed">
+          <p className="text-lg text-[#B0C4DE] max-w-2xl mx-auto leading-relaxed">
             Real contractors. Real results. See what happens when you stop buying leads and start building an empire.
           </p>
         </AnimatedSection>

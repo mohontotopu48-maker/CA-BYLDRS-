@@ -108,24 +108,24 @@ export default function PartnerPage() {
   }
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-[#0F1A2E]">
       {/* Hero Section */}
-      <section className="bg-[#F5F5F7] pt-28 pb-16 md:pt-36 md:pb-24">
+      <section className="bg-[#0D1754] pt-28 pb-16 md:pt-36 md:pb-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection className="text-center max-w-3xl mx-auto">
-            <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-[#1A237E] mb-6">
-              <Rocket className="w-10 h-10 text-white" />
+            <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-[#5EB6F0] mb-6">
+              <Rocket className="w-10 h-10 text-[#0F1A2E]" />
             </div>
-            <span className="inline-block text-xs font-semibold tracking-widest uppercase text-[#1A237E] mb-4">
+            <span className="inline-block text-xs font-semibold tracking-widest uppercase text-[#5EB6F0] mb-4">
               Start Your $500 Audit
             </span>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#1D1D1F] leading-tight tracking-tight mb-4">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#F0F4F8] leading-tight tracking-tight mb-4">
               The End of the Lead Gen Lottery.
             </h1>
-            <p className="text-xl sm:text-2xl font-medium text-[#1A237E] mb-6">
+            <p className="text-xl sm:text-2xl font-medium text-[#5EB6F0] mb-6">
               What if your entire marketing operation cost less than your daily coffee runs?
             </p>
-            <p className="text-lg text-[#6E6E73] max-w-2xl mx-auto leading-relaxed">
+            <p className="text-lg text-[#B0C4DE] max-w-2xl mx-auto leading-relaxed">
               We don&apos;t sell leads. We build the Authorized Monopoly of Trust in your city. To join CA BYLDRS, every contractor must first pass the Phase 1 Performance Audit. Your $1,000 Entry is split exactly where it matters: $500 Setup & Audit Fee + $500 Direct Ad Spend. 100% of the ad spend goes to the market — we prove your ROI before you ever commit to the full Alliance.
             </p>
           </AnimatedSection>
@@ -133,12 +133,12 @@ export default function PartnerPage() {
       </section>
 
       {/* Application Form */}
-      <section className="py-16 md:py-24 bg-white">
+      <section className="py-16 md:py-24 bg-[#0F1A2E]">
         <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection delay={0.15}>
             <form
               onSubmit={handleSubmit}
-              className="bg-white rounded-2xl border border-black/[0.08] shadow-sm p-6 sm:p-8 md:p-10 space-y-6"
+              className="bg-[#16253D] rounded-2xl border border-[rgba(94,182,240,0.1)] shadow-sm p-6 sm:p-8 md:p-10 space-y-6"
             >
               {/* Business Name */}
               <div className="space-y-2">
@@ -151,7 +151,7 @@ export default function PartnerPage() {
                   value={form.businessName}
                   onChange={(e) => updateField('businessName', e.target.value)}
                   required
-                  className="bg-white border-black/[0.08] rounded-xl focus:ring-[#1A237E]"
+                  className="bg-[#0D1754] border-[rgba(94,182,240,0.15)] rounded-xl focus:ring-[#5EB6F0] text-[#F0F4F8]"
                 />
               </div>
 
@@ -166,7 +166,7 @@ export default function PartnerPage() {
                   value={form.yourName}
                   onChange={(e) => updateField('yourName', e.target.value)}
                   required
-                  className="bg-white border-black/[0.08] rounded-xl focus:ring-[#1A237E]"
+                  className="bg-[#0D1754] border-[rgba(94,182,240,0.15)] rounded-xl focus:ring-[#5EB6F0] text-[#F0F4F8]"
                 />
               </div>
 
@@ -183,7 +183,7 @@ export default function PartnerPage() {
                     value={form.email}
                     onChange={(e) => updateField('email', e.target.value)}
                     required
-                    className="bg-white border-black/[0.08] rounded-xl focus:ring-[#1A237E]"
+                    className="bg-[#0D1754] border-[rgba(94,182,240,0.15)] rounded-xl focus:ring-[#5EB6F0] text-[#F0F4F8]"
                   />
                 </div>
                 <div className="space-y-2">
@@ -197,7 +197,7 @@ export default function PartnerPage() {
                     value={form.phone}
                     onChange={(e) => updateField('phone', e.target.value)}
                     required
-                    className="bg-white border-black/[0.08] rounded-xl focus:ring-[#1A237E]"
+                    className="bg-[#0D1754] border-[rgba(94,182,240,0.15)] rounded-xl focus:ring-[#5EB6F0] text-[#F0F4F8]"
                   />
                 </div>
               </div>
@@ -212,7 +212,7 @@ export default function PartnerPage() {
                     value={form.trade}
                     onValueChange={(val) => updateField('trade', val)}
                   >
-                    <SelectTrigger className="w-full bg-white border-black/[0.08] rounded-xl focus:ring-[#1A237E]">
+                    <SelectTrigger className="w-full bg-[#0D1754] border-[rgba(94,182,240,0.15)] rounded-xl focus:ring-[#5EB6F0] text-[#F0F4F8]">
                       <SelectValue placeholder="Select trade" />
                     </SelectTrigger>
                     <SelectContent>
@@ -234,7 +234,7 @@ export default function PartnerPage() {
                     value={form.licenseNumber}
                     onChange={(e) => updateField('licenseNumber', e.target.value)}
                     required
-                    className="bg-white border-black/[0.08] rounded-xl focus:ring-[#1A237E]"
+                    className="bg-[#0D1754] border-[rgba(94,182,240,0.15)] rounded-xl focus:ring-[#5EB6F0] text-[#F0F4F8]"
                   />
                 </div>
               </div>
@@ -249,7 +249,7 @@ export default function PartnerPage() {
                   placeholder="Google, referral, social media..."
                   value={form.referral}
                   onChange={(e) => updateField('referral', e.target.value)}
-                  className="bg-white border-black/[0.08] rounded-xl focus:ring-[#1A237E]"
+                  className="bg-[#0D1754] border-[rgba(94,182,240,0.15)] rounded-xl focus:ring-[#5EB6F0] text-[#F0F4F8]"
                 />
               </div>
 
@@ -261,14 +261,14 @@ export default function PartnerPage() {
                   onCheckedChange={(checked) => setCommitChecked(checked === true)}
                   className="mt-0.5"
                 />
-                <Label htmlFor="commit" className="text-sm text-[#6E6E73] leading-relaxed cursor-pointer">
+                <Label htmlFor="commit" className="text-sm text-[#B0C4DE] leading-relaxed cursor-pointer">
                   I understand this is a Done-For-You service that requires Partner Leadership. I commit to a 30-60 minute Monthly Strategy Sync to review the NXLBYLDR™ Task Log and ROI Calibration Report.
                 </Label>
               </div>
 
               {/* Coffee Run Note */}
-              <div className="bg-[#E8EAF6] rounded-xl p-4">
-                <p className="text-sm text-[#1A237E] font-medium leading-relaxed">
+              <div className="bg-[rgba(94,182,240,0.08)] rounded-xl p-4">
+                <p className="text-sm text-[#5EB6F0] font-medium leading-relaxed">
                   💡 Phase 1 Performance Audit: Your $1,000 Entry ($500 Setup + $500 Ad Spend) proves your ROI with daily content management (3 posts/day), Truth Dashboard access, and 15-day growth reports — before locking in the Phase 2 Alliance.
                 </p>
               </div>
@@ -295,12 +295,12 @@ export default function PartnerPage() {
               </div>
 
               {/* Terms & Privacy */}
-              <p className="text-center text-xs text-[#86868B] pt-2">
+              <p className="text-center text-xs text-[#B0C4DE]/60 pt-2">
                 By applying, you agree to our{' '}
                 <button
                   type="button"
                   onClick={() => navigate('terms')}
-                  className="text-[#1A237E] hover:underline cursor-pointer"
+                  className="text-[#5EB6F0] hover:underline cursor-pointer"
                 >
                   Terms of Service
                 </button>{' '}
@@ -308,7 +308,7 @@ export default function PartnerPage() {
                 <button
                   type="button"
                   onClick={() => navigate('privacy')}
-                  className="text-[#1A237E] hover:underline cursor-pointer"
+                  className="text-[#5EB6F0] hover:underline cursor-pointer"
                 >
                   Privacy Policy
                 </button>

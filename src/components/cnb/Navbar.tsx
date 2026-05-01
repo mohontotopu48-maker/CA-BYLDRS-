@@ -33,7 +33,7 @@ export function Navbar() {
       className={cn(
         'fixed top-0 left-0 right-0 z-50 transition-all duration-300',
         scrolled || !isHome
-          ? 'bg-white/80 backdrop-blur-xl shadow-sm border-b border-[rgba(0,0,0,0.08)]'
+          ? 'bg-[#0F1A2E]/90 backdrop-blur-xl border-b border-[rgba(94,182,240,0.1)]'
           : 'bg-transparent'
       )}
     >
@@ -45,10 +45,10 @@ export function Navbar() {
             className="flex items-center gap-2 group"
           >
             <img
-              src="https://i.ibb.co/6308JrK/image.png"
+              src="/logo-white.png"
               alt="CA BYLDRS Logo"
               width={168} height={56}
-              className="h-10 lg:h-12 w-auto object-contain drop-shadow-sm transition-all duration-300 group-hover:drop-shadow-md"
+              className="h-10 lg:h-12 w-auto object-contain transition-all duration-300"
             />
           </button>
 
@@ -61,10 +61,10 @@ export function Navbar() {
                 className={cn(
                   'px-3 xl:px-4 py-2 rounded-full text-sm font-medium transition-all duration-200',
                   currentPage === link.href
-                    ? 'text-[#1A237E] bg-[#1A237E]/[0.05]'
+                    ? 'text-[#5EB6F0] bg-[rgba(94,182,240,0.08)]'
                     : scrolled || !isHome
-                    ? 'text-[#6E6E73] hover:text-[#1D1D1F] hover:bg-[#F5F5F7]'
-                    : 'text-[#1D1D1F]/80 hover:text-[#1D1D1F] hover:bg-white/60'
+                    ? 'text-[#B0C4DE] hover:text-[#F0F4F8] hover:bg-[rgba(94,182,240,0.08)]'
+                    : 'text-[#B0C4DE]/80 hover:text-[#F0F4F8] hover:bg-white/10'
                 )}
               >
                 {link.label}
@@ -76,7 +76,7 @@ export function Navbar() {
           <div className="hidden lg:flex items-center gap-3">
             <Button
               onClick={() => handleNav('apply')}
-              className="apple-btn-primary text-sm py-2 px-5"
+              className="bg-[#5EB6F0] text-[#0F1A2E] hover:bg-[#4AA3E0] text-sm py-2 px-5 rounded-full font-semibold transition-colors duration-200"
             >
               Start Your $500 Audit
               <ChevronRight className="h-4 w-4 ml-1" />
@@ -91,26 +91,26 @@ export function Navbar() {
                   variant="ghost"
                   size="icon"
                   className={cn(
-                    scrolled || !isHome ? 'text-[#1D1D1F]' : 'text-[#1D1D1F]'
+                    scrolled || !isHome ? 'text-[#F0F4F8]' : 'text-[#F0F4F8]'
                   )}
                 >
                   <Menu className="h-5 w-5" />
                 </Button>
               </SheetTrigger>
-              <SheetContent side="right" className="w-80 p-0 bg-white">
+              <SheetContent side="right" className="w-80 p-0 bg-[#0F1A2E]">
                 <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
                 <div className="flex flex-col h-full">
-                  <div className="p-6 border-b border-[rgba(0,0,0,0.08)]">
+                  <div className="p-6 border-b border-[rgba(94,182,240,0.1)]">
                     <div className="flex items-center gap-3">
                       <img
-                        src="https://i.ibb.co/6308JrK/image.png"
+                        src="/logo-white.png"
                         alt="CA BYLDRS Logo"
                         width={140} height={40}
-                        className="h-9 w-auto object-contain drop-shadow-sm"
+                        className="h-9 w-auto object-contain"
                       />
                       <div>
-                        <p className="font-semibold text-sm text-[#1D1D1F]">CA BYLDRS</p>
-                        <p className="text-xs text-[#86868B]">Elite Contractor Alliance</p>
+                        <p className="font-semibold text-sm text-[#F0F4F8]">CA BYLDRS</p>
+                        <p className="text-xs text-[#B0C4DE]/60">Elite Contractor Alliance</p>
                       </div>
                     </div>
                   </div>
@@ -122,17 +122,17 @@ export function Navbar() {
                         className={cn(
                           'w-full text-left px-4 py-3 rounded-2xl text-sm font-medium transition-all duration-200',
                           currentPage === link.href
-                            ? 'text-[#1A237E] bg-[#1A237E]/[0.05]'
-                            : 'text-[#6E6E73] hover:text-[#1D1D1F] hover:bg-[#F5F5F7]'
+                            ? 'text-[#5EB6F0] bg-[rgba(94,182,240,0.08)]'
+                            : 'text-[#B0C4DE] hover:text-[#F0F4F8] hover:bg-[rgba(94,182,240,0.08)]'
                         )}
                       >
                         {link.label}
                       </button>
                     ))}
                   </div>
-                  <div className="p-4 border-t border-[rgba(0,0,0,0.08)] space-y-3">
+                  <div className="p-4 border-t border-[rgba(94,182,240,0.1)] space-y-3">
                     <Button
-                      className="w-full apple-btn-primary"
+                      className="w-full bg-[#5EB6F0] text-[#0F1A2E] hover:bg-[#4AA3E0] rounded-full font-semibold transition-colors duration-200"
                       onClick={() => handleNav('apply')}
                     >
                       Start Your $500 Audit

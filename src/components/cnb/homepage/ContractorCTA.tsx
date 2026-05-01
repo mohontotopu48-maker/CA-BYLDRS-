@@ -43,7 +43,7 @@ export default function ContractorCTA() {
   const { navigate } = useRouter();
 
   return (
-    <section className="w-full bg-[#F5F5F7]">
+    <section className="w-full bg-[#0D1754]">
       <div className="mx-auto max-w-6xl px-6 py-20 md:px-8">
         <div className="flex flex-col gap-12 md:flex-row md:gap-16 md:items-start">
           {/* ── Left: Copy & CTA ── */}
@@ -56,9 +56,9 @@ export default function ContractorCTA() {
               </StaggerItem>
 
               <StaggerItem>
-                <h2 className="mt-2 text-2xl font-bold tracking-tight text-[#1D1D1F] md:text-3xl">
+                <h2 className="mt-2 text-2xl font-bold tracking-tight text-[#F0F4F8] md:text-3xl">
                   Other Platforms Are Rigged Against You.
-                  <span className="block mt-1 text-[#1A237E]">We&apos;re Different.</span>
+                  <span className="block mt-1 text-[#5EB6F0]">We&apos;re Different.</span>
                 </h2>
               </StaggerItem>
 
@@ -67,13 +67,13 @@ export default function ContractorCTA() {
                 const PpIcon = pp.icon;
                 return (
                   <StaggerItem key={pp.title}>
-                    <div className="flex items-start gap-4 p-5 rounded-2xl bg-white border border-[rgba(0,0,0,0.06)] shadow-sm">
-                      <div className="flex-shrink-0 w-10 h-10 rounded-xl bg-[#E8EAF6] flex items-center justify-center">
-                        <PpIcon className="h-5 w-5 text-[#1A237E]" />
+                    <div className="flex items-start gap-4 p-5 rounded-2xl bg-[#16253D] border border-[rgba(94,182,240,0.1)] shadow-sm">
+                      <div className="flex-shrink-0 w-10 h-10 rounded-xl bg-[rgba(94,182,240,0.08)] flex items-center justify-center">
+                        <PpIcon className="h-5 w-5 text-[#5EB6F0]" />
                       </div>
                       <div>
-                        <h3 className="font-semibold text-[#1D1D1F] mb-1">{pp.title}</h3>
-                        <p className="text-sm text-[#6E6E73] leading-relaxed">{pp.description}</p>
+                        <h3 className="font-semibold text-[#F0F4F8] mb-1">{pp.title}</h3>
+                        <p className="text-sm text-[#B0C4DE] leading-relaxed">{pp.description}</p>
                       </div>
                     </div>
                   </StaggerItem>
@@ -85,8 +85,8 @@ export default function ContractorCTA() {
                 <ul className="space-y-3">
                   {benefits.map((benefit) => (
                     <li key={benefit} className="flex items-center gap-3">
-                      <CheckCircle2 className="h-5 w-5 shrink-0 text-[#1A237E]" />
-                      <span className="text-sm text-[#1D1D1F]">{benefit}</span>
+                      <CheckCircle2 className="h-5 w-5 shrink-0 text-[#5EB6F0]" />
+                      <span className="text-sm text-[#F0F4F8]">{benefit}</span>
                     </li>
                   ))}
                 </ul>
@@ -109,14 +109,14 @@ export default function ContractorCTA() {
           <div className="flex w-full shrink-0 flex-col gap-4 md:w-80">
             <AnimatedSection delay={0.2} direction="right">
               {/* Contractor testimonial card */}
-              <div className="bg-white rounded-[20px] p-6 border border-[rgba(0,0,0,0.06)] shadow-sm">
+              <div className="bg-[#16253D] rounded-[20px] p-6 border border-[rgba(94,182,240,0.1)] shadow-sm">
                 <div className="flex items-center gap-3 mb-4">
                   <div className="w-10 h-10 rounded-full bg-[#34C759] flex items-center justify-center text-white font-bold text-sm">
                     MR
                   </div>
                   <div>
-                    <p className="font-semibold text-[#1D1D1F] text-sm">Mike R.</p>
-                    <p className="text-xs text-[#86868B]">Licensed Plumber, Fullerton</p>
+                    <p className="font-semibold text-[#F0F4F8] text-sm">Mike R.</p>
+                    <p className="text-xs text-[#B0C4DE]/60">Licensed Plumber, Fullerton</p>
                   </div>
                 </div>
                 <div className="flex gap-0.5 mb-2">
@@ -126,7 +126,7 @@ export default function ContractorCTA() {
                     </svg>
                   ))}
                 </div>
-                <p className="text-sm text-[#6E6E73] italic leading-relaxed">
+                <p className="text-sm text-[#B0C4DE] italic leading-relaxed">
                   &ldquo;My close rate went from 15% to 60% after switching. CA BYLDRS sends real leads from homeowners who actually want my service.&rdquo;
                 </p>
               </div>
@@ -162,13 +162,13 @@ export default function ContractorCTA() {
                 {statCards.map((stat) => (
                   <div
                     key={stat.label}
-                    className="bg-white rounded-[20px] p-4 text-center border border-[rgba(0,0,0,0.06)] shadow-sm"
+                    className="bg-[#16253D] rounded-[20px] p-4 text-center border border-[rgba(94,182,240,0.1)] shadow-sm"
                   >
-                    <stat.icon className="mx-auto mb-2 h-5 w-5 text-[#1A237E]" />
-                    <p className="text-xl font-bold text-[#1D1D1F]">
+                    <stat.icon className="mx-auto mb-2 h-5 w-5 text-[#5EB6F0]" />
+                    <p className="text-xl font-bold text-[#F0F4F8]">
                       {stat.value}
                     </p>
-                    <p className="text-[10px] text-[#86868B]">{stat.label}</p>
+                    <p className="text-[10px] text-[#B0C4DE]/60">{stat.label}</p>
                   </div>
                 ))}
               </div>

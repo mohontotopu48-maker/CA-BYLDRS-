@@ -45,25 +45,25 @@ export default function EmergencyPage() {
   const { navigate } = useRouter();
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-[#0F1A2E]">
       {/* Breadcrumb */}
-      <div className="bg-white border-b border-black/[0.08]">
+      <div className="bg-[#0F1A2E] border-b border-[rgba(94,182,240,0.1)]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
-          <nav className="flex items-center gap-2 text-sm text-[#6E6E73]">
+          <nav className="flex items-center gap-2 text-sm text-[#B0C4DE]">
             <button
               onClick={() => navigate('home')}
-              className="hover:text-[#1A237E] transition-colors cursor-pointer"
+              className="hover:text-[#5EB6F0] transition-colors cursor-pointer"
             >
               Home
             </button>
             <ChevronRight className="size-3.5" />
-            <span className="text-[#1D1D1F] font-medium">Emergency Help</span>
+            <span className="text-[#F0F4F8] font-medium">Emergency Help</span>
           </nav>
         </div>
       </div>
 
       {/* Alert Banner */}
-      <section className="bg-[#1D1D1F] py-10 sm:py-14">
+      <section className="bg-[#0D1754] py-10 sm:py-14">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <AnimatedSection>
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-red-500/15 mb-4">
@@ -74,12 +74,12 @@ export default function EmergencyPage() {
             </div>
           </AnimatedSection>
           <AnimatedSection delay={0.1}>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight tracking-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#F0F4F8] leading-tight tracking-tight">
               Emergency Home Services
             </h1>
           </AnimatedSection>
           <AnimatedSection delay={0.2}>
-            <p className="mt-4 text-lg sm:text-xl text-[#86868B] max-w-2xl mx-auto leading-relaxed">
+            <p className="mt-4 text-lg sm:text-xl text-[#B0C4DE]/60 max-w-2xl mx-auto leading-relaxed">
               When disaster strikes, you need help fast. We prioritize emergency requests to get you connected with a professional immediately.
             </p>
           </AnimatedSection>
@@ -92,12 +92,12 @@ export default function EmergencyPage() {
       {/* Phone Number */}
       <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 -mt-10 relative z-20">
         <AnimatedSection>
-          <Card className="shadow-sm rounded-2xl border border-black/[0.08] bg-white">
+          <Card className="shadow-sm rounded-2xl border border-[rgba(94,182,240,0.1)] bg-[#16253D]">
             <CardContent className="p-6 sm:p-8 text-center">
               <div className="w-16 h-16 rounded-full bg-red-50 flex items-center justify-center mx-auto mb-4">
                 <PhoneCall className="size-8 text-red-600" />
               </div>
-              <h2 className="text-lg font-semibold text-[#1D1D1F] mb-2">
+              <h2 className="text-lg font-semibold text-[#F0F4F8] mb-2">
                 Call Now for Immediate Help
               </h2>
               <a
@@ -106,7 +106,7 @@ export default function EmergencyPage() {
               >
                 +1 (562) 944-0500
               </a>
-              <p className="mt-3 text-sm text-[#6E6E73]">
+              <p className="mt-3 text-sm text-[#B0C4DE]">
                 Available 24/7 for emergency requests
               </p>
             </CardContent>
@@ -118,19 +118,19 @@ export default function EmergencyPage() {
       <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 sm:mt-16">
         <AnimatedSection>
           <div className="text-center mb-8">
-            <span className="inline-block text-xs font-semibold tracking-widest uppercase text-[#1A237E] mb-3">
+            <span className="inline-block text-xs font-semibold tracking-widest uppercase text-[#5EB6F0] mb-3">
               Emergency Guide
             </span>
-            <h2 className="text-2xl sm:text-3xl font-bold text-[#1D1D1F]">
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#F0F4F8]">
               What Counts as an Emergency?
             </h2>
-            <p className="mt-3 text-[#6E6E73] max-w-2xl mx-auto leading-relaxed">
+            <p className="mt-3 text-[#B0C4DE] max-w-2xl mx-auto leading-relaxed">
               Some home issues can&apos;t wait. If you&apos;re experiencing any of the following, don&apos;t hesitate to reach out immediately.
             </p>
           </div>
         </AnimatedSection>
         <AnimatedSection delay={0.1}>
-          <Card className="shadow-sm rounded-2xl border border-black/[0.08] bg-white">
+          <Card className="shadow-sm rounded-2xl border border-[rgba(94,182,240,0.1)] bg-[#16253D]">
             <CardContent className="p-6 sm:p-8">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {[
@@ -145,7 +145,7 @@ export default function EmergencyPage() {
                     <div className="w-8 h-8 rounded-lg bg-red-50 flex items-center justify-center flex-shrink-0">
                       <item.icon className="size-4 text-red-600" />
                     </div>
-                    <span className="text-sm text-[#1D1D1F]">{item.label}</span>
+                    <span className="text-sm text-[#F0F4F8]">{item.label}</span>
                   </div>
                 ))}
               </div>
@@ -155,14 +155,14 @@ export default function EmergencyPage() {
       </section>
 
       {/* Emergency Service Types Grid */}
-      <section className="bg-[#F5F5F7] py-12 sm:py-16 mt-12 sm:mt-16">
+      <section className="bg-[#0D1754] py-12 sm:py-16 mt-12 sm:mt-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection>
             <div className="text-center mb-10">
-              <span className="inline-block text-xs font-semibold tracking-widest uppercase text-[#1A237E] mb-3">
+              <span className="inline-block text-xs font-semibold tracking-widest uppercase text-[#5EB6F0] mb-3">
                 Coverage
               </span>
-              <h2 className="text-2xl sm:text-3xl font-bold text-[#1D1D1F]">
+              <h2 className="text-2xl sm:text-3xl font-bold text-[#F0F4F8]">
                 Emergency Services We Cover
               </h2>
             </div>
@@ -170,15 +170,15 @@ export default function EmergencyPage() {
           <StaggerContainer className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {emergencyTypes.map((service) => (
               <StaggerItem key={service.title}>
-                <Card className="h-full shadow-sm rounded-2xl border border-black/[0.08] bg-white hover:shadow-md transition-all duration-300">
+                <Card className="h-full shadow-sm rounded-2xl border border-[rgba(94,182,240,0.1)] bg-[#16253D] hover:shadow-[0_4px_24px_rgba(94,182,240,0.08)] transition-all duration-300">
                   <CardContent className="p-6">
                     <div className="w-12 h-12 rounded-xl bg-red-50 flex items-center justify-center mb-4">
                       <service.icon className="size-6 text-red-600" />
                     </div>
-                    <h3 className="text-lg font-semibold text-[#1D1D1F] mb-2">
+                    <h3 className="text-lg font-semibold text-[#F0F4F8] mb-2">
                       {service.title}
                     </h3>
-                    <p className="text-sm text-[#6E6E73] leading-relaxed mb-4">
+                    <p className="text-sm text-[#B0C4DE] leading-relaxed mb-4">
                       {service.description}
                     </p>
                     <Button
@@ -201,22 +201,22 @@ export default function EmergencyPage() {
       {/* Big CTA */}
       <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
         <AnimatedSection>
-          <div className="bg-[#1D1D1F] rounded-2xl overflow-hidden">
+          <div className="bg-[#0D1754] rounded-2xl overflow-hidden border border-[rgba(94,182,240,0.1)]">
             <CardContent className="p-8 sm:p-10 text-center relative z-10">
               <div className="flex items-center justify-center gap-2 mb-4">
-                <Clock className="size-6 text-[#86868B]" />
-                <Shield className="size-6 text-[#86868B]" />
+                <Clock className="size-6 text-[#B0C4DE]/60" />
+                <Shield className="size-6 text-[#B0C4DE]/60" />
               </div>
-              <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3">
+              <h2 className="text-2xl sm:text-3xl font-bold text-[#F0F4F8] mb-3">
                 Don&apos;t Wait — Get Help Now
               </h2>
-              <p className="text-[#86868B] max-w-xl mx-auto mb-6">
+              <p className="text-[#B0C4DE]/60 max-w-xl mx-auto mb-6">
                 Every minute counts during a home emergency. Submit your request now and we&apos;ll immediately connect you with a verified emergency professional in your area.
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
                 <Button
                   size="lg"
-                  className="bg-[#1A237E] hover:bg-[#1A237E]/90 text-white font-semibold px-8 py-5 text-lg rounded-full cursor-pointer h-auto"
+                  className="bg-[#5EB6F0] hover:bg-[#4AA3E0] text-[#0F1A2E] font-semibold px-8 py-5 text-lg rounded-full cursor-pointer h-auto"
                   onClick={() => navigate('contact')}
                 >
                   Request Emergency Service
@@ -224,7 +224,7 @@ export default function EmergencyPage() {
                 </Button>
                 <a
                   href="tel:+15629440500"
-                  className="inline-flex items-center justify-center gap-2 px-8 py-5 text-lg font-semibold rounded-full border border-white/20 text-white hover:bg-white/10 transition-all duration-300 h-auto"
+                  className="inline-flex items-center justify-center gap-2 px-8 py-5 text-lg font-semibold rounded-full border border-white/20 text-[#F0F4F8] hover:bg-white/10 transition-all duration-300 h-auto"
                 >
                   <Phone className="size-5" />
                   Call +1 (562) 944-0500
@@ -239,8 +239,8 @@ export default function EmergencyPage() {
       <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-12">
         <AnimatedSection>
           <div className="bg-[#FFF9F0] border border-[#FFD699] rounded-2xl p-4 sm:p-6 flex items-start gap-4">
-            <div className="w-10 h-10 rounded-full bg-[#1A237E]/10 flex items-center justify-center flex-shrink-0 mt-0.5">
-              <AlertTriangle className="size-5 text-[#1A237E]" />
+            <div className="w-10 h-10 rounded-full bg-[rgba(94,182,240,0.08)] flex items-center justify-center flex-shrink-0 mt-0.5">
+              <AlertTriangle className="size-5 text-[#5EB6F0]" />
             </div>
             <div>
               <h3 className="font-semibold text-[#1D1D1F] mb-1">

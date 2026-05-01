@@ -8,41 +8,41 @@ export default function TermsPage() {
   const { navigate } = useRouter();
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-[#0F1A2E]">
       {/* Breadcrumb */}
-      <div className="bg-white border-b border-black/[0.08]">
+      <div className="bg-[#0F1A2E] border-b border-[rgba(94,182,240,0.1)]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
-          <nav className="flex items-center gap-2 text-sm text-[#6E6E73]">
+          <nav className="flex items-center gap-2 text-sm text-[#B0C4DE]">
             <button
               onClick={() => navigate('home')}
-              className="hover:text-[#1A237E] transition-colors cursor-pointer flex items-center gap-1"
+              className="hover:text-[#5EB6F0] transition-colors cursor-pointer flex items-center gap-1"
             >
               <Home className="size-3.5" />
               Home
             </button>
             <ChevronRight className="size-3.5" />
-            <span className="text-[#1D1D1F] font-medium">Terms of Service</span>
+            <span className="text-[#F0F4F8] font-medium">Terms of Service</span>
           </nav>
         </div>
       </div>
 
       {/* Content */}
-      <section className="py-16 md:py-24 bg-white">
+      <section className="py-16 md:py-24 bg-[#0F1A2E]">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection>
-            <div className="space-y-10 text-[#1D1D1F]">
+            <div className="space-y-10 text-[#F0F4F8]">
               {/* Header */}
               <div>
-                <h1 className="text-3xl sm:text-4xl font-bold text-[#1D1D1F] leading-tight">
+                <h1 className="text-3xl sm:text-4xl font-bold text-[#F0F4F8] leading-tight">
                   Terms of Service
                 </h1>
-                <p className="mt-3 text-sm text-[#86868B]">
+                <p className="mt-3 text-sm text-[#B0C4DE]/60">
                   Last Updated: January 1, 2025
                 </p>
               </div>
 
               {/* Intro */}
-              <p className="text-base leading-relaxed text-[#6E6E73]">
+              <p className="text-base leading-relaxed text-[#B0C4DE]">
                 Welcome to CA BYLDRS. These Terms of Service (&quot;Terms&quot;) govern
                 your use of our website and lead-matching platform. By accessing or using our
                 services, you agree to be bound by these Terms. If you do not agree to these
@@ -51,10 +51,10 @@ export default function TermsPage() {
 
               {/* 1. Acceptance of Terms */}
               <div className="space-y-3">
-                <h2 className="text-xl font-bold text-[#1D1D1F]">
+                <h2 className="text-xl font-bold text-[#F0F4F8]">
                   1. Acceptance of Terms
                 </h2>
-                <p className="text-base leading-relaxed text-[#6E6E73]">
+                <p className="text-base leading-relaxed text-[#B0C4DE]">
                   By accessing the CA BYLDRS website, submitting a service request,
                   or creating a contractor account, you acknowledge that you have read,
                   understood, and agree to be bound by these Terms of Service, as well as our
@@ -66,17 +66,17 @@ export default function TermsPage() {
 
               {/* 2. Service Description */}
               <div className="space-y-3">
-                <h2 className="text-xl font-bold text-[#1D1D1F]">
+                <h2 className="text-xl font-bold text-[#F0F4F8]">
                   2. Service Description
                 </h2>
-                <p className="text-base leading-relaxed text-[#6E6E73]">
+                <p className="text-base leading-relaxed text-[#B0C4DE]">
                   CA BYLDRS is a lead-matching platform that connects homeowners in
                   Orange County and Los Angeles County with licensed local contractors. We are not
                   a contractor, and we do not directly perform any home services. Our role is
                   limited to facilitating introductions between homeowners seeking services and
                   qualified contractors who can provide them.
                 </p>
-                <p className="text-base leading-relaxed text-[#6E6E73]">
+                <p className="text-base leading-relaxed text-[#B0C4DE]">
                   We do not guarantee the quality, timeliness, or outcome of any services
                   performed by contractors matched through our platform. All agreements for
                   services are made directly between the homeowner and the contractor. We
@@ -88,13 +88,13 @@ export default function TermsPage() {
 
               {/* 3. User Responsibilities */}
               <div className="space-y-3">
-                <h2 className="text-xl font-bold text-[#1D1D1F]">
+                <h2 className="text-xl font-bold text-[#F0F4F8]">
                   3. User Responsibilities
                 </h2>
-                <p className="text-base leading-relaxed text-[#6E6E73]">
+                <p className="text-base leading-relaxed text-[#B0C4DE]">
                   When using our platform, you agree to:
                 </p>
-                <ul className="list-disc list-inside space-y-2 text-base text-[#6E6E73] pl-2">
+                <ul className="list-disc list-inside space-y-2 text-base text-[#B0C4DE] pl-2">
                   <li>
                     Provide accurate, truthful, and complete information when submitting service
                     requests or creating an account.
@@ -123,10 +123,10 @@ export default function TermsPage() {
 
               {/* 4. Contractor Partners */}
               <div className="space-y-3">
-                <h2 className="text-xl font-bold text-[#1D1D1F]">
+                <h2 className="text-xl font-bold text-[#F0F4F8]">
                   4. Contractor Partners
                 </h2>
-                <p className="text-base leading-relaxed text-[#6E6E73]">
+                <p className="text-base leading-relaxed text-[#B0C4DE]">
                   All contractor partners on our platform are independent contractors and are not
                   employees, agents, or representatives of CA BYLDRS. We do not
                   supervise, direct, or control the work performed by any contractor. Each
@@ -134,7 +134,7 @@ export default function TermsPage() {
                   work, maintaining proper licensing and insurance, and complying with all
                   applicable local, state, and federal laws and regulations.
                 </p>
-                <p className="text-base leading-relaxed text-[#6E6E73]">
+                <p className="text-base leading-relaxed text-[#B0C4DE]">
                   While we make reasonable efforts to verify contractor licenses and credentials,
                   we do not guarantee the accuracy of this information. Homeowners are encouraged
                   to independently verify the license status and insurance coverage of any
@@ -144,17 +144,17 @@ export default function TermsPage() {
 
               {/* 5. Limitation of Liability */}
               <div className="space-y-3">
-                <h2 className="text-xl font-bold text-[#1D1D1F]">
+                <h2 className="text-xl font-bold text-[#F0F4F8]">
                   5. Limitation of Liability
                 </h2>
-                <p className="text-base leading-relaxed text-[#6E6E73]">
+                <p className="text-base leading-relaxed text-[#B0C4DE]">
                   To the fullest extent permitted by applicable law, CA BYLDRS, its
                   officers, directors, employees, agents, and affiliates shall not be liable for
                   any indirect, incidental, special, consequential, or punitive damages, including
                   but not limited to loss of profits, data, or goodwill, arising out of or related
                   to your use of or inability to use the platform.
                 </p>
-                <p className="text-base leading-relaxed text-[#6E6E73]">
+                <p className="text-base leading-relaxed text-[#B0C4DE]">
                   CA BYLDRS shall not be liable for any damages arising from the
                   acts, omissions, errors, or misconduct of any contractor matched through our
                   platform, including but not limited to property damage, personal injury, or
@@ -166,16 +166,16 @@ export default function TermsPage() {
 
               {/* 6. Changes to Terms */}
               <div className="space-y-3">
-                <h2 className="text-xl font-bold text-[#1D1D1F]">
+                <h2 className="text-xl font-bold text-[#F0F4F8]">
                   6. Changes to Terms
                 </h2>
-                <p className="text-base leading-relaxed text-[#6E6E73]">
+                <p className="text-base leading-relaxed text-[#B0C4DE]">
                   We reserve the right to modify, amend, or update these Terms of Service at any
                   time at our sole discretion. When we make changes, we will update the
                   &quot;Last Updated&quot; date at the top of this page. We may also notify you through
                   email or a prominent notice on our website for material changes.
                 </p>
-                <p className="text-base leading-relaxed text-[#6E6E73]">
+                <p className="text-base leading-relaxed text-[#B0C4DE]">
                   Your continued use of the platform after any changes to these Terms constitutes
                   your acceptance of the revised Terms. If you do not agree to the modified Terms,
                   you should discontinue use of our platform and, if applicable, request deletion
@@ -185,25 +185,25 @@ export default function TermsPage() {
 
               {/* 7. Contact */}
               <div className="space-y-3">
-                <h2 className="text-xl font-bold text-[#1D1D1F]">
+                <h2 className="text-xl font-bold text-[#F0F4F8]">
                   7. Contact
                 </h2>
-                <p className="text-base leading-relaxed text-[#6E6E73]">
+                <p className="text-base leading-relaxed text-[#B0C4DE]">
                   If you have any questions about these Terms of Service or need assistance,
                   please contact us:
                 </p>
-                <div className="bg-[#F5F5F7] rounded-2xl p-6 space-y-2 text-sm text-[#1D1D1F]">
+                <div className="bg-[#0D1754] rounded-2xl p-6 space-y-2 text-sm text-[#F0F4F8]">
                   <p>
-                    <strong className="text-[#1D1D1F]">CA BYLDRS</strong>
+                    <strong className="text-[#F0F4F8]">CA BYLDRS</strong>
                   </p>
-                  <p className="text-[#6E6E73]">Email: legal@cabyldrs.com</p>
-                  <p className="text-[#6E6E73]">Address: 12510 Mc Cann Dr., Santa Fe Springs, CA 90670, United States</p>
-                  <p className="text-[#6E6E73]">Phone: +1 (562) 944-0500</p>
+                  <p className="text-[#B0C4DE]">Email: legal@cabyldrs.com</p>
+                  <p className="text-[#B0C4DE]">Address: 12510 Mc Cann Dr., Santa Fe Springs, CA 90670, United States</p>
+                  <p className="text-[#B0C4DE]">Phone: +1 (562) 944-0500</p>
                 </div>
               </div>
 
               {/* Closing */}
-              <p className="text-base leading-relaxed text-[#86868B] pt-4 border-t border-black/[0.08]">
+              <p className="text-base leading-relaxed text-[#B0C4DE]/60 pt-4 border-t border-[rgba(94,182,240,0.1)]">
                 These Terms of Service shall be governed by and construed in accordance with the
                 laws of the State of California, without regard to its conflict of law provisions.
                 Any disputes arising under these Terms shall be resolved in the courts of

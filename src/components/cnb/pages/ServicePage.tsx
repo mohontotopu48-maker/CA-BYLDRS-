@@ -77,21 +77,21 @@ export default function ServicePage() {
   const { navigate } = useRouter();
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-[#0F1A2E]">
       {/* Hero Section */}
-      <section className="bg-[#F5F5F7] pt-28 pb-16 md:pt-36 md:pb-24">
+      <section className="bg-[#0D1754] pt-28 pb-16 md:pt-36 md:pb-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection className="text-center max-w-3xl mx-auto">
-            <span className="inline-block text-xs font-semibold tracking-widest uppercase text-[#1A237E] mb-4">
+            <span className="inline-block text-xs font-semibold tracking-widest uppercase text-[#5EB6F0] mb-4">
               The Engine
             </span>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#1D1D1F] leading-tight tracking-tight mb-4">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#F0F4F8] leading-tight tracking-tight mb-4">
               The Engine Behind Your Growth
             </h1>
-            <p className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#1A237E] mb-6">
+            <p className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#5EB6F0] mb-6">
               NXLBYLDR™ OS
             </p>
-            <p className="text-lg text-[#6E6E73] max-w-2xl mx-auto leading-relaxed">
+            <p className="text-lg text-[#B0C4DE] max-w-2xl mx-auto leading-relaxed">
               NXLBYLDR™ scales businesses using an exclusive 8-channel ecosystem to deliver more Calls, Clicks, and Customers. A GoHighLevel-powered operating system that automates lead capture, follow-up, pipeline management, reputation, and social dominance — all from one dashboard.
             </p>
           </AnimatedSection>
@@ -99,14 +99,14 @@ export default function ServicePage() {
       </section>
 
       {/* Feature Grid */}
-      <section className="py-16 md:py-24 bg-white">
+      <section className="py-16 md:py-24 bg-[#0F1A2E]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection>
             <div className="text-center mb-12">
-              <span className="inline-block text-xs font-semibold tracking-widest uppercase text-[#1A237E] mb-3">
+              <span className="inline-block text-xs font-semibold tracking-widest uppercase text-[#5EB6F0] mb-3">
                 Features
               </span>
-              <h2 className="text-2xl sm:text-3xl font-bold text-[#1D1D1F]">
+              <h2 className="text-2xl sm:text-3xl font-bold text-[#F0F4F8]">
                 Everything You Need to Dominate
               </h2>
             </div>
@@ -116,14 +116,14 @@ export default function ServicePage() {
               const Icon = feature.icon;
               return (
                 <StaggerItem key={feature.title}>
-                  <div className="bg-white rounded-2xl border border-black/[0.08] shadow-sm p-6 h-full hover:shadow-md transition-shadow duration-300">
-                    <div className="w-12 h-12 rounded-xl bg-[#E8EAF6] flex items-center justify-center mb-4">
-                      <Icon className="w-6 h-6 text-[#1A237E]" />
+                  <div className="bg-[#16253D] rounded-2xl border border-[rgba(94,182,240,0.1)] shadow-sm p-6 h-full hover:shadow-[0_4px_24px_rgba(94,182,240,0.08)] transition-shadow duration-300">
+                    <div className="w-12 h-12 rounded-xl bg-[rgba(94,182,240,0.08)] flex items-center justify-center mb-4">
+                      <Icon className="w-6 h-6 text-[#5EB6F0]" />
                     </div>
-                    <h3 className="text-lg font-semibold text-[#1D1D1F] mb-2">
+                    <h3 className="text-lg font-semibold text-[#F0F4F8] mb-2">
                       {feature.title}
                     </h3>
-                    <p className="text-sm text-[#6E6E73] leading-relaxed">
+                    <p className="text-sm text-[#B0C4DE] leading-relaxed">
                       {feature.description}
                     </p>
                   </div>
@@ -135,14 +135,14 @@ export default function ServicePage() {
       </section>
 
       {/* How It Works */}
-      <section className="py-16 md:py-24 bg-[#F5F5F7]">
+      <section className="py-16 md:py-24 bg-[#0D1754]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection>
             <div className="text-center mb-12">
-              <span className="inline-block text-xs font-semibold tracking-widest uppercase text-[#1A237E] mb-3">
+              <span className="inline-block text-xs font-semibold tracking-widest uppercase text-[#5EB6F0] mb-3">
                 Process
               </span>
-              <h2 className="text-2xl sm:text-3xl font-bold text-[#1D1D1F]">
+              <h2 className="text-2xl sm:text-3xl font-bold text-[#F0F4F8]">
                 How It Works
               </h2>
             </div>
@@ -152,17 +152,17 @@ export default function ServicePage() {
               const Icon = step.icon;
               return (
                 <StaggerItem key={step.number}>
-                  <div className="bg-white rounded-2xl border border-black/[0.08] shadow-sm p-6 sm:p-8 text-center h-full">
-                    <div className="w-14 h-14 rounded-full bg-[#1A237E] flex items-center justify-center mx-auto mb-4">
-                      <Icon className="w-6 h-6 text-white" />
+                  <div className="bg-[#16253D] rounded-2xl border border-[rgba(94,182,240,0.1)] shadow-sm p-6 sm:p-8 text-center h-full">
+                    <div className="w-14 h-14 rounded-full bg-[#5EB6F0] flex items-center justify-center mx-auto mb-4">
+                      <Icon className="w-6 h-6 text-[#0F1A2E]" />
                     </div>
-                    <span className="inline-block text-xs font-bold tracking-widest text-[#5C6BC0] mb-2">
+                    <span className="inline-block text-xs font-bold tracking-widest text-[#5EB6F0] mb-2">
                       STEP {step.number}
                     </span>
-                    <h3 className="text-xl font-semibold text-[#1D1D1F] mb-3">
+                    <h3 className="text-xl font-semibold text-[#F0F4F8] mb-3">
                       {step.title}
                     </h3>
-                    <p className="text-sm text-[#6E6E73] leading-relaxed">
+                    <p className="text-sm text-[#B0C4DE] leading-relaxed">
                       {step.description}
                     </p>
                   </div>
@@ -174,19 +174,19 @@ export default function ServicePage() {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-white py-16 md:py-20">
+      <section className="bg-[#0F1A2E] py-16 md:py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <AnimatedSection>
-            <h2 className="text-2xl sm:text-3xl font-bold text-[#1D1D1F] mb-4">
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#F0F4F8] mb-4">
               Ready to Brand It. Build It. Sell It?
             </h2>
-            <p className="text-[#6E6E73] text-lg mb-8 max-w-xl mx-auto">
+            <p className="text-[#B0C4DE] text-lg mb-8 max-w-xl mx-auto">
               Join the Phase 1 Performance Audit and watch NXLBYLDR™ transform your Calls, Clicks, and Customers. We prove the ROI before you commit.
             </p>
             <Button
               onClick={() => navigate('apply')}
               size="lg"
-              className="bg-[#1A237E] hover:bg-[#0D1754] text-white font-semibold px-8 h-12 text-base rounded-full shadow-sm cursor-pointer"
+              className="bg-[#5EB6F0] hover:bg-[#4AA3E0] text-[#0F1A2E] font-semibold px-8 h-12 text-base rounded-full shadow-sm cursor-pointer"
             >
               Start Your $500 Audit
               <ArrowRight className="size-4 ml-2" />
